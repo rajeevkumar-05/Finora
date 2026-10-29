@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#00504b","outline":"#73787d","surface-variant":"#e7e2da","on-secondary-container":"#476961","surface-tint":"#43627a","surface-dim":"#ded9d2","tertiary":"#001a18","income-green":"#15846C","background":"#fef9f1","surface-container":"#f2ede5","glass-highlight":"rgba(255, 255, 255, 0.95)","surface-bright":"#fef9f1","surface-container-low":"#f8f3eb","primary":"#001929","error-container":"#ffdad6","on-secondary-fixed-variant":"#2b4d45","primary-container":"#0a2e44","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#00201e","surface-container-highest":"#e7e2da","secondary-fixed-dim":"#a9cec4","outline-variant":"#c2c7cd","inverse-surface":"#32302b","primary-fixed":"#cae6ff","surface":"#fef9f1","inverse-primary":"#abcae6","on-surface":"#1d1c17","on-primary-container":"#7796b0","secondary":"#42655d","on-primary-fixed-variant":"#2b4a61","glass-surface":"rgba(255, 255, 255, 0.45)","secondary-container":"#c2e8dd","inverse-on-surface":"#f5f0e8","on-background":"#1d1c17","deep-ink":"#10232D","on-secondary-fixed":"#00201b","glass-border":"rgba(255, 255, 255, 0.65)","error":"#ba1a1a","tertiary-fixed":"#a7f0e8","muted-slate":"#667981","on-primary-fixed":"#001e30","surface-container-high":"#ece8e0","secondary-fixed":"#c5eae0","on-error":"#ffffff","on-tertiary-container":"#579e97","pure-white":"#FFFFFF","on-tertiary":"#ffffff","tertiary-fixed-dim":"#8cd3cc","warning-amber":"#E5A247","primary-fixed-dim":"#abcae6","on-error-container":"#93000a","glass-surface-dense":"rgba(255, 255, 255, 0.72)","tertiary-container":"#00312e","expense-coral":"#D96969","on-surface-variant":"#42474c"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","margin":"1rem","margin-tablet":"1.5rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"label-md":["Inter"],"financial-mono-lg":["JetBrains Mono"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"financial-mono-md":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"financial-mono-sm":["JetBrains Mono"],"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"financial-mono-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"financial-mono-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"financial-mono-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-space-md top-space-md bottom-space-md w-72 bg-primary-container/95 backdrop-blur-xl rounded-lg z-50 flex flex-col py-space-lg shadow-[0_24px_48px_-8px_rgba(10,46,68,0.22)] border border-white/20"><div class="px-space-lg mb-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-primary-container font-headline-sm text-headline-sm font-bold shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.85)]">F</div><span class="font-headline-md text-headline-md text-pure-white font-bold tracking-tight">Finora</span></div><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded-full bg-white/10 text-primary-fixed">Pro</span></div><nav class="flex-1 px-space-sm space-y-1.5 overflow-y-auto" data-active-classes="bg-white/15 text-pure-white shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.4)]"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Dashboard</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="transactions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Transactions</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="budget-planner" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span>Budget Planner</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="savings-goals" href="#"><span class="material-symbols-outlined text-[20px]">savings</span>Savings Goals</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Reports &amp; Analytics</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="smart-insights" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span>Smart Insights</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Settings</a></nav><div class="px-space-md pt-space-md"><div class="p-space-md rounded-lg bg-white/5 border border-white/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-primary-container">Net Worth</span><span class="font-financial-mono-sm text-financial-mono-sm text-pure-white font-bold">₹8,45,200</span></div><span class="material-symbols-outlined text-secondary-fixed text-[20px]">trending_up</span></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center flex-1 max-w-md"><div class="w-full flex items-center gap-space-sm px-space-md py-2 bg-surface-container-lowest/80 backdrop-blur-md rounded-full shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]"><span class="material-symbols-outlined text-muted-slate text-[20px]">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-deep-ink placeholder:text-muted-slate focus:outline-none" placeholder="Search transactions, budgets, insights..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-expense-coral"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.6)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full space-y-8">
+<!-- Top Action & Context Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm backdrop-blur-md shadow-sm">
+          FY 2024-25 • Q3 Analytics
+        </span>
+<span class="w-1.5 h-1.5 rounded-full bg-income-green animate-pulse"></span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">Live Ledger Sync</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight font-bold">Reports &amp; Analytics</h1>
+<p class="font-body-md text-body-md text-muted-slate max-w-2xl mt-1">
+        Comprehensive fiscal breakdown, historical spending velocities, and asset accumulation trajectories across active portfolios.
+      </p>
+</div>
+<!-- Controls Cluster -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Date Range Selector Capsule -->
+<div class="flex items-center p-1 rounded-full bg-surface-container/70 backdrop-blur-xl shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]">
+<button class="date-filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all" data-period="this-month" type="button">This Month</button>
+<button class="date-filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-white text-deep-ink shadow-[0_2px_8px_rgba(10,46,68,0.08),inset_0_1px_1px_rgba(255,255,255,1)] transition-all font-semibold" data-period="last-30" type="button">Last 30 Days</button>
+<button class="date-filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all" data-period="q3" type="button">Q3 2024</button>
+<button class="date-filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all hidden sm:inline-block" data-period="ytd" type="button">Year-to-Date</button>
+<button class="date-filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all" data-period="custom" type="button">
+<span class="material-symbols-outlined text-[16px] align-middle">calendar_today</span>
+</button>
+</div>
+<!-- Currency Badge -->
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-low/90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)] text-deep-ink">
+<span class="w-5 h-5 rounded-full bg-primary-container text-white flex items-center justify-center font-financial-mono-sm text-[11px] font-bold">₹</span>
+<span class="font-financial-mono-sm text-financial-mono-sm font-semibold">INR</span>
+</div>
+<!-- Export 3D Liquid Glass CTA Button -->
+<button class="relative group overflow-hidden px-5 py-2.5 rounded-full bg-primary-container text-pure-white font-label-md text-label-md flex items-center gap-2 shadow-[0_12px_24px_-6px_rgba(10,46,68,0.35),inset_0_1.5px_2px_rgba(255,255,255,0.4)] hover:shadow-[0_16px_32px_-6px_rgba(10,46,68,0.45),inset_0_2px_3px_rgba(255,255,255,0.6)] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">file_download</span>
+<span>Export Statement</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded-full bg-white/15 text-primary-fixed uppercase tracking-wider font-semibold">CSV / PDF</span>
+</button>
+</div>
+</div>
+<!-- Top KPI Frosted Glass Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+<!-- Card 1: Net Savings Rate -->
+<div class="relative overflow-hidden rounded-lg p-6 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(10,46,68,0.06),inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.03)] hover:-translate-y-0.5 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-muted-slate uppercase tracking-wide">Net Savings Rate</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold tracking-tight">38.2%</span>
+<span class="font-label-sm text-label-sm text-income-green flex items-center font-semibold bg-income-green/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] mr-0.5">trending_up</span>+4.1%
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">vs. Last Quarter (34.1%)</p>
+<!-- Mini Sparkline Track -->
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-low/50 -mx-6 -mb-6 px-6 py-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Efficiency Index</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-semibold">Tier 1 • Prime</span>
+</div>
+</div>
+<!-- Card 2: Average Daily Burn -->
+<div class="relative overflow-hidden rounded-lg p-6 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(10,46,68,0.06),inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.03)] hover:-translate-y-0.5 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-muted-slate uppercase tracking-wide">Average Daily Burn</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold tracking-tight">₹621<span class="text-sm font-normal text-muted-slate">/day</span></span>
+<span class="font-label-sm text-label-sm text-income-green flex items-center font-semibold bg-income-green/10 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] mr-0.5">arrow_downward</span>-14%
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">Optimal limit target: ₹720/day</p>
+<div class="mt-4 pt-3 bg-surface-container-low/50 -mx-6 -mb-6 px-6 py-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Burn Velocity</span>
+<span class="font-label-sm text-label-sm text-income-green font-semibold">Comfortable Pace</span>
+</div>
+</div>
+<!-- Card 3: Peak Spending Day -->
+<div class="relative overflow-hidden rounded-lg p-6 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(10,46,68,0.06),inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.03)] hover:-translate-y-0.5 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-muted-slate uppercase tracking-wide">Peak Spending Outflow</span>
+<div class="w-8 h-8 rounded-full bg-warning-amber/20 flex items-center justify-center text-warning-amber">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold tracking-tight">₹4,250</span>
+<span class="font-label-sm text-label-sm text-warning-amber font-semibold bg-warning-amber/10 px-2 py-0.5 rounded-full">
+          18 Oct
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">Festival Provisions &amp; Travel</p>
+<div class="mt-4 pt-3 bg-surface-container-low/50 -mx-6 -mb-6 px-6 py-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Outlier Variance</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-expense-coral font-semibold">+585% vs avg</span>
+</div>
+</div>
+<!-- Card 4: Discretionary vs Essential -->
+<div class="relative overflow-hidden rounded-lg p-6 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_24px_-4px_rgba(10,46,68,0.06),inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.03)] hover:-translate-y-0.5 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-muted-slate uppercase tracking-wide">Split Discipline</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">donut_large</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold tracking-tight">34% <span class="text-sm font-normal text-muted-slate">/ 66%</span></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Healthy 50/30/20</span>
+</div>
+<!-- Progress Bar Segment -->
+<div class="mt-3 w-full h-2 rounded-full bg-surface-container-high overflow-hidden flex shadow-inner">
+<div class="h-full bg-secondary-container" style="width: 34%" title="Discretionary: 34%"></div>
+<div class="h-full bg-primary-container" style="width: 66%" title="Essential: 66%"></div>
+</div>
+<div class="mt-3.5 pt-2 flex items-center justify-between font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5 text-muted-slate"><span class="w-2 h-2 rounded-full bg-secondary-container"></span>Discretionary</span>
+<span class="flex items-center gap-1.5 text-deep-ink font-medium"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Essential Fixes</span>
+</div>
+</div>
+</div>
+<!-- Primary Analytic Visualizations Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Monthly Inflow vs Outflow Trajectory Chart (8 cols) -->
+<div class="lg:col-span-8 rounded-lg p-7 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(10,46,68,0.08),inset_0_1.5px_2px_rgba(255,255,255,0.95)] flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Monthly Inflow vs Outflow Comparison</h2>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/50 px-2 py-0.5 rounded-full font-semibold">6-Month Trend</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mt-0.5">Evaluating discretionary cash generation vs operational expenditure drag</p>
+</div>
+<!-- Legend Pills -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-md bg-primary-container shadow-sm"></span>
+<span class="font-label-md text-label-md text-deep-ink">Inflow (₹)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-md bg-secondary-container shadow-sm"></span>
+<span class="font-label-md text-label-md text-deep-ink">Outflow (₹)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-0.5 bg-income-green rounded-full"></span>
+<span class="font-label-md text-label-md text-income-green">Net Delta</span>
+</div>
+</div>
+</div>
+<!-- Custom SVG Chart Canvas -->
+<div class="w-full relative h-72">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 760 260">
+<defs>
+<lineargradient id="inflowGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#0a2e44" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#0a2e44" stop-opacity="0.75"></stop>
+</lineargradient>
+<lineargradient id="outflowGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#c2e8dd" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#c2e8dd" stop-opacity="0.65"></stop>
+</lineargradient>
+<lineargradient id="areaGlow" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#15846C" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#15846C" stop-opacity="0.0"></stop>
+</lineargradient>
+<filter height="120%" id="glassReflect" width="120%" x="-10%" y="-10%">
+<fedropshadow dx="0" dy="4" flood-color="#0a2e44" flood-opacity="0.1" stddeviation="4"></fedropshadow>
+</filter>
+</defs>
+<!-- Horizontal Reference Gridlines -->
+<line stroke="#ece8e0" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="30" y2="30"></line>
+<text class="fill-muted-slate text-[11px] font-financial-mono-sm" text-anchor="end" x="32" y="34">₹60k</text>
+<line stroke="#ece8e0" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="85" y2="85"></line>
+<text class="fill-muted-slate text-[11px] font-financial-mono-sm" text-anchor="end" x="32" y="89">₹45k</text>
+<line stroke="#ece8e0" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="140" y2="140"></line>
+<text class="fill-muted-slate text-[11px] font-financial-mono-sm" text-anchor="end" x="32" y="144">₹30k</text>
+<line stroke="#ece8e0" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="195" y2="195"></line>
+<text class="fill-muted-slate text-[11px] font-financial-mono-sm" text-anchor="end" x="32" y="199">₹15k</text>
+<line stroke="#c2c7cd" stroke-width="1.2" x1="40" x2="740" y1="230" y2="230"></line>
+<!-- Shaded Trajectory Curve Between Net Deltas -->
+<path d="M 95,145 Q 215,128 335,115 T 575,76 T 695,64 L 695,230 L 95,230 Z" fill="url(#areaGlow)"></path>
+<path d="M 95,145 Q 215,128 335,115 T 575,76 T 695,64" fill="none" stroke="#15846C" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Month 1: MAY (Inflow: 38k, Outflow: 25k) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="140" rx="6" width="18" x="75" y="90"></rect>
+<rect fill="url(#outflowGrad)" height="90" rx="6" width="18" x="97" y="140"></rect>
+<circle cx="95" cy="145" fill="#15846C" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[12px] font-label-md" text-anchor="middle" x="95" y="248">May</text>
+</g>
+<!-- Month 2: JUN (Inflow: 42k, Outflow: 26k) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="152" rx="6" width="18" x="195" y="78"></rect>
+<rect fill="url(#outflowGrad)" height="95" rx="6" width="18" x="217" y="135"></rect>
+<circle cx="215" cy="133" fill="#15846C" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[12px] font-label-md" text-anchor="middle" x="215" y="248">Jun</text>
+</g>
+<!-- Month 3: JUL (Inflow: 44k, Outflow: 28k) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="160" rx="6" width="18" x="315" y="70"></rect>
+<rect fill="url(#outflowGrad)" height="102" rx="6" width="18" x="337" y="128"></rect>
+<circle cx="335" cy="115" fill="#15846C" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[12px] font-label-md" text-anchor="middle" x="335" y="248">Jul</text>
+</g>
+<!-- Month 4: AUG (Inflow: 46k, Outflow: 27k) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="166" rx="6" width="18" x="435" y="64"></rect>
+<rect fill="url(#outflowGrad)" height="99" rx="6" width="18" x="457" y="131"></rect>
+<circle cx="455" cy="98" fill="#15846C" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[12px] font-label-md" text-anchor="middle" x="455" y="248">Aug</text>
+</g>
+<!-- Month 5: SEP (Inflow: 50k, Outflow: 29k) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="180" rx="6" width="18" x="555" y="50"></rect>
+<rect fill="url(#outflowGrad)" height="106" rx="6" width="18" x="577" y="124"></rect>
+<circle cx="575" cy="76" fill="#15846C" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[12px] font-label-md" text-anchor="middle" x="575" y="248">Sep</text>
+</g>
+<!-- Month 6: OCT (Inflow: 56k, Outflow: 31k - Festive Peak) -->
+<g class="chart-group hover:opacity-90 cursor-pointer">
+<rect fill="url(#inflowGrad)" filter="url(#glassReflect)" height="195" rx="6" width="18" x="675" y="35"></rect>
+<rect fill="url(#outflowGrad)" height="112" rx="6" width="18" x="697" y="118"></rect>
+<circle cx="695" cy="64" fill="#15846C" r="5.5" stroke="#ffffff" stroke-width="2.5"></circle>
+<text class="fill-deep-ink font-bold text-[12px] font-label-md" text-anchor="middle" x="695" y="248">Oct</text>
+<!-- Highlight Tag for Oct -->
+<rect fill="#0a2e44" height="18" rx="9" width="54" x="668" y="10"></rect>
+<text class="fill-pure-white text-[9px] font-financial-mono-sm font-bold" text-anchor="middle" x="695" y="22">+₹25k Net</text>
+</g>
+</svg>
+</div>
+<div class="mt-4 pt-4 border-t-0 flex flex-wrap items-center justify-between gap-4 text-muted-slate font-body-sm text-body-sm bg-surface-container-low/40 rounded-full px-5 py-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-income-green">insights</span>
+<span>Rolling savings velocity expanded by <strong class="text-deep-ink font-semibold">18.4%</strong> since May launch.</span>
+</div>
+<div class="font-financial-mono-sm text-financial-mono-sm text-deep-ink">
+          Total Inflow H1: <span class="font-bold">₹2,76,000</span>
+</div>
+</div>
+</div>
+<!-- Category Distribution Interactive Doughnut (4 cols) -->
+<div class="lg:col-span-4 rounded-lg p-7 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(10,46,68,0.08),inset_0_1.5px_2px_rgba(255,255,255,0.95)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Category Outflows</h2>
+<span class="material-symbols-outlined text-muted-slate text-[20px]">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate">Monthly aggregate breakdown by weighted sector</p>
+<!-- Donut Visual with Central Rupee Metric -->
+<div class="relative flex items-center justify-center my-6">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Ring -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#f2ede5" stroke-width="12"></circle>
+<!-- Rent & Housing: 43% -> perimeter 238.76 -> dasharray 102.6, 238.76 -->
+<circle class="transition-all hover:stroke-width-[14]" cx="50" cy="50" fill="transparent" r="38" stroke="#0a2e44" stroke-dasharray="102.6 238.76" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Food & Dining: 34% -> dasharray 81.18, 238.76 (offset: -102.6) -->
+<circle class="transition-all hover:stroke-width-[14]" cx="50" cy="50" fill="transparent" r="38" stroke="#42655d" stroke-dasharray="81.18 238.76" stroke-dashoffset="-102.6" stroke-width="12"></circle>
+<!-- Shopping: 17% -> dasharray 40.59, 238.76 (offset: -183.78) -->
+<circle class="transition-all hover:stroke-width-[14]" cx="50" cy="50" fill="transparent" r="38" stroke="#99e1d9" stroke-dasharray="40.59 238.76" stroke-dashoffset="-183.78" stroke-width="12"></circle>
+<!-- Metro & Travel: 6% -> dasharray 14.32, 238.76 (offset: -224.37) -->
+<circle class="transition-all hover:stroke-width-[14]" cx="50" cy="50" fill="transparent" r="38" stroke="#e5a247" stroke-dasharray="14.32 238.76" stroke-dashoffset="-224.37" stroke-width="12"></circle>
+</svg>
+<!-- Glass Center Hub -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Total Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹18,950</span>
+<span class="font-label-sm text-label-sm text-income-green font-semibold">Under Budget</span>
+</div>
+</div>
+</div>
+<!-- Segment breakdown list -->
+<div class="space-y-2.5">
+<div class="flex items-center justify-between p-2 rounded-full hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-deep-ink">Rent &amp; Housing</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-semibold">₹8,000</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-muted-slate font-bold">43%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-full hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-deep-ink">Food &amp; Dining</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-semibold">₹6,400</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-muted-slate font-bold">34%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-full hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-deep-ink">Shopping &amp; Gear</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-semibold">₹3,100</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-muted-slate font-bold">17%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-full hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-warning-amber"></span>
+<span class="font-label-md text-label-md text-deep-ink">Metro &amp; Transit</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-semibold">₹1,450</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-muted-slate font-bold">6%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Analytics Row: Net Worth Curve & Payment Rails -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Savings & Net Worth Growth Arc (7 cols) -->
+<div class="lg:col-span-7 rounded-lg p-7 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(10,46,68,0.08),inset_0_1.5px_2px_rgba(255,255,255,0.95)] flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Savings &amp; Net Worth Trajectory</h2>
+<p class="font-body-sm text-body-sm text-muted-slate">Compounded liquid reserve growth over recent quarters</p>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold">₹1,48,250</span>
+<span class="font-label-sm text-label-sm text-income-green bg-income-green/10 px-2 py-0.5 rounded-full font-bold">+32.4%</span>
+</div>
+</div>
+<!-- Trajectory Vector SVG -->
+<div class="relative w-full h-44 mt-4">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 540 160">
+<defs>
+<lineargradient id="networthArea" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#15846C" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#15846C" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Guide Line -->
+<line stroke="#ece8e0" stroke-width="1" x1="20" x2="520" y1="130" y2="130"></line>
+<line stroke="#ece8e0" stroke-dasharray="3 3" stroke-width="1" x1="20" x2="520" y1="40" y2="40"></line>
+<!-- Area Fill -->
+<path d="M 30,122 C 120,118 190,95 280,78 C 370,62 440,38 510,22 L 510,140 L 30,140 Z" fill="url(#networthArea)"></path>
+<!-- Curvature Line -->
+<path d="M 30,122 C 120,118 190,95 280,78 C 370,62 440,38 510,22" fill="none" stroke="#15846C" stroke-linecap="round" stroke-width="3"></path>
+<!-- Data Pins -->
+<circle cx="30" cy="122" fill="#0a2e44" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[10px] font-financial-mono-sm" text-anchor="middle" x="30" y="145">₹1.12L</text>
+<circle cx="280" cy="78" fill="#15846C" r="4" stroke="#ffffff" stroke-width="2"></circle>
+<text class="fill-muted-slate text-[10px] font-financial-mono-sm" text-anchor="middle" x="280" y="98">₹1.28L</text>
+<circle cx="510" cy="22" fill="#15846C" r="6" stroke="#ffffff" stroke-width="3"></circle>
+<text class="fill-deep-ink font-bold text-[11px] font-financial-mono-sm" text-anchor="end" x="500" y="16">₹1.48L Target Peak</text>
+</svg>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3 pt-3 mt-2">
+<div class="p-3 rounded-lg bg-surface-container-low/60 text-center">
+<span class="font-label-sm text-label-sm text-muted-slate block">May Base</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">₹1,12,000</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low/60 text-center">
+<span class="font-label-sm text-label-sm text-muted-slate block">Net Added</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-income-green font-bold">+₹36,250</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low/60 text-center">
+<span class="font-label-sm text-label-sm text-muted-slate block">CAGR Velocity</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">7.2% MoM</span>
+</div>
+</div>
+</div>
+<!-- Payment Channel Share Rail Breakdown (5 cols) -->
+<div class="lg:col-span-5 rounded-lg p-7 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(10,46,68,0.08),inset_0_1.5px_2px_rgba(255,255,255,0.95)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Payment Rail Share</h2>
+<span class="material-symbols-outlined text-muted-slate text-[20px]">contactless</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate">Distribution across transacting settlement interfaces</p>
+<!-- Segmented Rails Breakdown -->
+<div class="mt-6 space-y-4">
+<!-- UPI -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary-container font-headline-sm text-[10px] font-bold">
+                  ⚡
+                </div>
+<span class="font-label-md text-label-md text-deep-ink font-semibold">UPI (GPay / PhonePe / Cred)</span>
+</div>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">68% <span class="text-xs font-normal text-muted-slate">(₹12,886)</span></span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-primary-container shadow-sm" style="width: 68%"></div>
+</div>
+</div>
+<!-- Debit Card -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-muted-slate font-headline-sm text-[10px]">
+                  💳
+                </div>
+<span class="font-label-md text-label-md text-deep-ink font-semibold">Debit Card (HDFC Tap &amp; Pay)</span>
+</div>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">22% <span class="text-xs font-normal text-muted-slate">(₹4,169)</span></span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary shadow-sm" style="width: 22%"></div>
+</div>
+</div>
+<!-- NetBanking -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-muted-slate font-headline-sm text-[10px]">
+                  🏛️
+                </div>
+<span class="font-label-md text-label-md text-deep-ink font-semibold">NetBanking / Direct Debit</span>
+</div>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">10% <span class="text-xs font-normal text-muted-slate">(₹1,895)</span></span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary-container shadow-sm" style="width: 10%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Settlement Insight -->
+<div class="mt-6 p-3 rounded-full bg-surface-container-low/70 flex items-center justify-between px-4">
+<span class="font-label-sm text-label-sm text-muted-slate">Primary Velocity Engine:</span>
+<span class="font-label-sm text-label-sm text-income-green font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Instant Settlement
+        </span>
+</div>
+</div>
+</div>
+<!-- Detailed Historical Audit Ledger Summary Panel -->
+<div class="rounded-lg p-7 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(10,46,68,0.08),inset_0_1.5px_2px_rgba(255,255,255,0.95)]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Variance &amp; Anomaly Audit</h2>
+<p class="font-body-sm text-body-sm text-muted-slate">Flagged events and notable budgetary shifts identified by smart parsing</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-muted-slate">Auto-Categorization Precision:</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-income-green font-bold">99.4%</span>
+</div>
+</div>
+<!-- Ledger Table Items -->
+<div class="space-y-2">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low/90 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-9 h-9 rounded-full bg-warning-amber/15 text-warning-amber flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">celebration</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-deep-ink font-semibold">Festive Grocery &amp; Confectionery Outlier</span>
+<span class="px-2 py-0.2 rounded-full bg-warning-amber/10 text-warning-amber font-label-sm text-label-sm font-semibold">Discretionary Spike</span>
+</div>
+<span class="font-body-sm text-body-sm text-muted-slate">18 Oct 2024 • Blinkit / Nature's Basket Quick Commerce</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-financial-mono-md text-financial-mono-md text-expense-coral font-bold">- ₹4,250.00</span>
+<span class="block font-label-sm text-label-sm text-muted-slate">UPI #64820194</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low/90 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">home_work</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-deep-ink font-semibold">Scheduled Fixed Shelter Settlement</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Contractual Recurring</span>
+</div>
+<span class="font-body-sm text-body-sm text-muted-slate">01 Oct 2024 • Society Maintenance &amp; Residential Lease</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">- ₹8,000.00</span>
+<span class="block font-label-sm text-label-sm text-muted-slate">NetBanking Standing Order</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low/40 hover:bg-surface-container-low/90 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-9 h-9 rounded-full bg-income-green/15 text-income-green flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-deep-ink font-semibold">Consulting Retainer &amp; Dividends</span>
+<span class="px-2 py-0.2 rounded-full bg-income-green/10 text-income-green font-label-sm text-label-sm font-semibold">Surplus Inflow</span>
+</div>
+<span class="font-body-sm text-body-sm text-muted-slate">05 Oct 2024 • Razorpay Settlement Rail</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-financial-mono-md text-financial-mono-md text-income-green font-bold">+ ₹56,000.00</span>
+<span class="block font-label-sm text-label-sm text-muted-slate">NEFT IMPS Cleared</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive tab toggle for date period selection
+  document.querySelectorAll('.date-filter-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.date-filter-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-deep-ink', 'shadow-[0_2px_8px_rgba(10,46,68,0.08),inset_0_1px_1px_rgba(255,255,255,1)]', 'font-semibold');
+        btn.classList.add('text-muted-slate');
+      });
+      this.classList.remove('text-muted-slate');
+      this.classList.add('bg-white', 'text-deep-ink', 'shadow-[0_2px_8px_rgba(10,46,68,0.08),inset_0_1px_1px_rgba(255,255,255,1)]', 'font-semibold');
+    });
+  });
+</script></main></div></body></html>

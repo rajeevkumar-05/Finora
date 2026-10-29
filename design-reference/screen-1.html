@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#73787d","primary-fixed":"#cae6ff","surface-container-highest":"#e7e2da","secondary":"#42655d","inverse-surface":"#32302b","on-secondary-fixed":"#00201b","surface-bright":"#fef9f1","surface-dim":"#ded9d2","tertiary-container":"#00312e","income-green":"#15846C","inverse-primary":"#abcae6","on-surface":"#1d1c17","tertiary-fixed-dim":"#8cd3cc","surface-container-lowest":"#ffffff","primary":"#001929","error":"#ba1a1a","on-primary-container":"#7796b0","primary-container":"#0a2e44","on-secondary-container":"#476961","on-primary":"#ffffff","secondary-fixed-dim":"#a9cec4","pure-white":"#FFFFFF","on-surface-variant":"#42474c","surface":"#fef9f1","on-error":"#ffffff","deep-ink":"#10232D","tertiary-fixed":"#a7f0e8","surface-tint":"#43627a","glass-surface":"rgba(255, 255, 255, 0.45)","surface-variant":"#e7e2da","on-error-container":"#93000a","on-tertiary-fixed-variant":"#00504b","background":"#fef9f1","glass-surface-dense":"rgba(255, 255, 255, 0.72)","primary-fixed-dim":"#abcae6","glass-border":"rgba(255, 255, 255, 0.65)","surface-container":"#f2ede5","on-primary-fixed":"#001e30","surface-container-high":"#ece8e0","expense-coral":"#D96969","on-tertiary-fixed":"#00201e","outline-variant":"#c2c7cd","secondary-fixed":"#c5eae0","muted-slate":"#667981","on-primary-fixed-variant":"#2b4a61","secondary-container":"#c2e8dd","inverse-on-surface":"#f5f0e8","on-secondary":"#ffffff","error-container":"#ffdad6","tertiary":"#001a18","on-tertiary":"#ffffff","warning-amber":"#E5A247","surface-container-low":"#f8f3eb","glass-highlight":"rgba(255, 255, 255, 0.95)","on-tertiary-container":"#579e97","on-background":"#1d1c17","on-secondary-fixed-variant":"#2b4d45"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin-tablet":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"financial-mono-sm":["JetBrains Mono"],"label-md":["Inter"],"financial-mono-md":["JetBrains Mono"],"label-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"financial-mono-lg":["JetBrains Mono"]},"fontSize":{"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"financial-mono-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"financial-mono-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"26px","fontWeight":"400"}],"financial-mono-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased relative min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full bg-secondary-fixed/20 blur-[140px]"></div><div class="absolute top-1/2 -right-32 w-[600px] h-[600px] rounded-full bg-primary-fixed/25 blur-[140px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 h-20 bg-surface/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(10,46,68,0.05)]"><div class="h-20 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.8),0_4px_12px_rgba(66,101,93,0.3)]"><span class="material-symbols-outlined text-pure-white text-headline-sm">account_balance_wallet</span></div><span class="font-headline-md text-headline-md text-deep-ink tracking-tight">Finora</span></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container/60 backdrop-blur-md p-1.5 rounded-full shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]" data-active-classes="bg-pure-white text-deep-ink font-label-md shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.9),0_6px_16px_rgba(10,46,68,0.08)]"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-all bg-pure-white text-deep-ink font-label-md shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.9),0_6px_16px_rgba(10,46,68,0.08)]" data-path="landing" href="#">Overview</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="features" href="#">Features</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="liquid-engine" href="#">Glass Engine</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="pricing" href="#">Student Pass</a></nav><div class="flex items-center gap-space-sm"><a class="px-space-lg py-space-xs rounded-full bg-primary-container text-pure-white font-label-md text-label-md shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.3),0_8px_20px_-4px_rgba(10,46,68,0.3)] hover:brightness-110 active:scale-95 transition-all" data-path="dashboard" href="#">Launch App</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2KG_PLyFEcbGu7atMRWonP9SDkBcbwIcwEnUFExjgtwQe4LJNA_LYUxrnPRFc0Fe-qURWdE-oT6FfTPCdv7D5UaVNaiiz-789ZSR2NIkYy6DyfBVLXj01N5XRKhEXHUaAQGtBypCi_aaSa8MMyevuIK182Wvg3nfrggCoXMgR0MmwIijJgK4P4Afbq0s9PLGY8y8J4Xe21n7tw0JFI66gZDkphquUdX7tGh7JqgJw"/></div></div></header><main class="relative pt-20 w-full max-w-7xl mx-auto px-margin-desktop"><div class="flex flex-col w-full">
+<!-- AMBIENT LIGHT BLOBS (CONSTRAINED RELATIVE) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 left-1/4 w-[500px] h-[500px] rounded-full bg-secondary-fixed/30 blur-[130px] pointer-events-none"></div>
+<div class="absolute top-96 -right-20 w-[550px] h-[550px] rounded-full bg-primary-fixed/35 blur-[150px] pointer-events-none"></div>
+<!-- HERO SECTION -->
+<section class="relative pt-12 pb-20 flex flex-col items-center text-center">
+<!-- LIQUID PILL BADGE -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1px_2px_rgba(10,46,68,0.06),0_8px_20px_rgba(10,46,68,0.06)] mb-space-lg transition-transform hover:scale-105 cursor-pointer">
+<span class="w-2 h-2 rounded-full bg-income-green shadow-[0_0_8px_#15846C]"></span>
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Finora 3.0 • Next-Gen Wealth OS</span>
+<span class="material-symbols-outlined text-secondary text-body-sm">arrow_forward</span>
+</div>
+<!-- EDITORIAL DISPLAY TYPOGRAPHY -->
+<h1 class="max-w-4xl font-display-hero text-display-hero text-deep-ink tracking-tight mb-space-md">
+        Take Control of <span class="relative inline-block text-secondary drop-shadow-[0_4px_24px_rgba(66,101,93,0.35)]">Your Money.<span class="absolute left-0 bottom-1 w-full h-[6px] bg-secondary-fixed rounded-full opacity-60"></span></span>
+</h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-muted-slate mb-space-xl">
+        Track smarter. Spend better. Save for what matters. Crafted with sensory glass physics for ambitious students and modern creators across India.
+      </p>
+<!-- 3D LIQUID GLASS PILL CALL TO ACTIONS (INSPIRED BY REFERENCE IMAGE) -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-24">
+<!-- PRIMARY CONVEX GLOSSY 3D PILL BUTTON -->
+<a class="group relative px-8 py-3.5 rounded-full bg-gradient-to-b from-secondary to-tertiary-container text-pure-white font-label-lg text-label-lg shadow-[inset_0_3px_2px_0_rgba(255,255,255,0.9),inset_0_-2px_4px_0_rgba(0,0,0,0.35),0_16px_32px_-6px_rgba(66,101,93,0.45)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_20px_40px_-6px_rgba(66,101,93,0.6)] active:scale-95 transition-all duration-200 flex items-center gap-space-xs overflow-hidden" href="#">
+<div class="absolute inset-x-3 top-0 h-[45%] bg-gradient-to-b from-pure-white/40 to-transparent rounded-full pointer-events-none"></div>
+<span class="relative z-10">Get Started Free</span>
+<span class="material-symbols-outlined text-pure-white relative z-10 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform text-label-lg">north_east</span>
+</a>
+<!-- ULTRA-REFRACTIVE SECONDARY GLASS PILL BUTTON -->
+<a class="group relative px-8 py-3.5 rounded-full bg-pure-white/60 backdrop-blur-2xl text-deep-ink font-label-lg text-label-lg shadow-[inset_0_2.5px_2px_0_rgba(255,255,255,0.95),inset_0_-2px_3px_0_rgba(10,46,68,0.1),0_12px_28px_-6px_rgba(10,46,68,0.1)] hover:bg-pure-white/85 active:scale-95 transition-all duration-200 flex items-center gap-space-xs" href="#interactive-demo">
+<div class="absolute inset-x-3 top-0.5 h-[40%] bg-gradient-to-b from-pure-white/70 to-transparent rounded-full pointer-events-none"></div>
+<span class="material-symbols-outlined text-secondary text-headline-sm">play_circle</span>
+<span>Explore Dashboard</span>
+</a>
+</div>
+<!-- CENTERPIECE: TILTED 3D LIQUID GLASS DESKTOP DASHBOARD CARD -->
+<div class="relative w-full max-w-5xl mx-auto perspective-1000" id="interactive-demo">
+<!-- Floating Glass Ambient Glow Underneath -->
+<div class="absolute inset-8 rounded-xl bg-gradient-to-r from-secondary-fixed/40 via-primary-fixed/50 to-secondary-fixed/30 blur-3xl opacity-70 -z-10"></div>
+<!-- Main Dimensional Glass Tablet Container -->
+<div class="w-full rounded-xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[inset_0_3px_4px_0_rgba(255,255,255,0.95),inset_0_-3px_5px_0_rgba(10,46,68,0.08),0_30px_70px_-15px_rgba(10,46,68,0.18)] p-space-lg md:p-space-xl text-left transition-transform duration-500 hover:rotate-0">
+<!-- Top Specular Chrome Bar & Controls -->
+<div class="flex items-center justify-between pb-space-lg mb-space-lg shadow-[0_1px_0_rgba(10,46,68,0.06)]">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<div class="w-3 h-3 rounded-full bg-expense-coral/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]"></div>
+<div class="w-3 h-3 rounded-full bg-warning-amber/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]"></div>
+<div class="w-3 h-3 rounded-full bg-income-green/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]"></div>
+</div>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate pl-2">vault://finora.in/student-reserve</span>
+</div>
+<!-- Segmented Liquid Puck Switcher -->
+<div class="hidden sm:flex items-center p-1 bg-surface-container/60 rounded-full shadow-[inset_0_1px_3px_rgba(10,46,68,0.08)]">
+<button class="px-space-md py-1 rounded-full bg-pure-white text-deep-ink font-label-sm text-label-sm shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.95),0_4px_12px_rgba(10,46,68,0.08)]">This Month</button>
+<button class="px-space-md py-1 rounded-full text-muted-slate font-label-sm text-label-sm hover:text-deep-ink transition-colors">Quarter</button>
+<button class="px-space-md py-1 rounded-full text-muted-slate font-label-sm text-label-sm hover:text-deep-ink transition-colors">YTD</button>
+</div>
+</div>
+<!-- Dashboard Content Mosaic -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Hero Ledger Card (Sapphire Glass Panel) -->
+<div class="lg:col-span-7 rounded-lg bg-gradient-to-br from-primary-container via-deep-ink to-primary-container p-space-lg text-pure-white relative overflow-hidden shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.35),0_18px_36px_-6px_rgba(0,25,41,0.35)]">
+<!-- Glass Edge Specular Sheen -->
+<div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-pure-white/40 to-transparent"></div>
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-secondary-fixed/15 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-md text-label-md text-primary-fixed tracking-wide uppercase">Primary Liquid Reserve</span>
+<span class="px-2.5 py-0.5 rounded-full bg-pure-white/10 font-label-sm text-label-sm text-secondary-fixed shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">Active Campus Node</span>
+</div>
+<!-- Main Monospaced Rupee Counter -->
+<div class="flex items-baseline gap-space-xs mb-space-sm">
+<span class="font-financial-mono-lg text-financial-mono-lg tracking-tight">₹26,350</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-primary-fixed-dim">.80</span>
+<span class="ml-space-sm px-2 py-0.5 rounded-full bg-income-green/20 text-secondary-fixed font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">trending_up</span> +14.2%
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mb-space-lg">₹8,500 unallocated savings secured this month.</p>
+<!-- Inline Dynamic Vector Sparkline SVG -->
+<div class="w-full h-20 mb-space-lg relative">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 400 80">
+<defs>
+<lineargradient id="chartGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#a7f0e8" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#a7f0e8" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0 65 Q 60 40, 110 52 T 210 32 T 310 38 T 400 12" fill="none" stroke="#a7f0e8" stroke-linecap="round" stroke-width="3.5"></path>
+<path d="M0 65 Q 60 40, 110 52 T 210 32 T 310 38 T 400 12 L 400 80 L 0 80 Z" fill="url(#chartGrad)"></path>
+<circle class="animate-pulse" cx="400" cy="12" fill="#FFFFFF" r="5"></circle>
+</svg>
+</div>
+<!-- Glass Capsule Quick Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-full bg-pure-white/15 hover:bg-pure-white/25 active:scale-95 text-pure-white font-label-sm text-label-sm shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.4)] transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-label-md">add_circle</span> Add ₹ Expense
+                </button>
+<button class="px-space-md py-2 rounded-full bg-pure-white/10 hover:bg-pure-white/20 active:scale-95 text-pure-white font-label-sm text-label-sm shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.2)] transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-label-md">swap_horiz</span> Split Bill
+                </button>
+<button class="px-space-md py-2 rounded-full bg-pure-white/10 hover:bg-pure-white/20 active:scale-95 text-pure-white font-label-sm text-label-sm shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.2)] transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-label-md">receipt_long</span> Scan Slip
+                </button>
+</div>
+</div>
+<!-- Right Glass Ledger & Breakdown Stack -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Pocket Savings Tracker (Thick Acrylic Lens Card) -->
+<div class="rounded-lg bg-surface-container-low/70 backdrop-blur-xl p-space-md shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),0_8px_20px_rgba(10,46,68,0.06)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]">
+<span class="material-symbols-outlined text-headline-sm">laptop_mac</span>
+</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-deep-ink">M3 MacBook Pocket</h4>
+<p class="font-body-sm text-body-sm text-muted-slate">₹64,200 of ₹85,000</p>
+</div>
+</div>
+<span class="font-financial-mono-md text-financial-mono-md text-income-green font-bold">75%</span>
+</div>
+<!-- Glass Groove Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-high/80 p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.12)]">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-income-green shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_0_8px_rgba(21,132,108,0.4)] w-3/4"></div>
+</div>
+</div>
+<!-- Recent High-Frequency Entries -->
+<div class="rounded-lg bg-surface-container-low/70 backdrop-blur-xl p-space-md shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),0_8px_20px_rgba(10,46,68,0.06)] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-deep-ink">Campus Activity</span>
+<span class="font-label-sm text-label-sm text-secondary hover:underline cursor-pointer">View All</span>
+</div>
+<!-- Transaction Item 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-pure-white/70 hover:bg-pure-white transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.03)]">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-headline-sm">coffee</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-deep-ink leading-tight">Blue Tokai Roastery</p>
+<p class="font-body-sm text-body-sm text-muted-slate">Today, 11:20 AM</p>
+</div>
+</div>
+<span class="font-financial-mono-md text-financial-mono-md text-expense-coral">- ₹280.00</span>
+</div>
+<!-- Transaction Item 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-pure-white/70 hover:bg-pure-white transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.03)]">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)]">
+<span class="material-symbols-outlined text-headline-sm">account_balance</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-deep-ink leading-tight">Freelance Dev Stipend</p>
+<p class="font-body-sm text-body-sm text-muted-slate">Yesterday</p>
+</div>
+</div>
+<span class="font-financial-mono-md text-financial-mono-md text-income-green">+ ₹14,000.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Visual Metaphor Lens (Tactile Glass Pills Reference) -->
+<div class="mt-space-lg pt-space-md shadow-[0_-1px_0_rgba(10,46,68,0.06)] flex flex-wrap items-center justify-between gap-space-md text-muted-slate font-body-sm text-body-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-income-green"></span> 256-bit Encrypted Enclave</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Auto UPI Category Sync</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-deep-ink font-semibold">Active Sync:</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-financial-mono-sm text-financial-mono-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]">SBI • HDFC • GPay</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION OVERLAP BADGE METRIC -->
+<div class="max-w-4xl mx-auto -mt-8 relative z-20 px-4">
+<div class="rounded-full bg-surface-container-lowest/90 backdrop-blur-2xl px-space-xl py-space-md shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.95),inset_0_-1px_2px_rgba(10,46,68,0.08),0_16px_36px_-6px_rgba(10,46,68,0.12)] flex flex-wrap items-center justify-around gap-space-md text-center">
+<div>
+<div class="font-financial-mono-lg text-financial-mono-lg text-deep-ink">₹4.8 Cr+</div>
+<div class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Student Budgets Balanced</div>
+</div>
+<div class="hidden sm:block w-px h-8 bg-surface-container-highest"></div>
+<div>
+<div class="font-financial-mono-lg text-financial-mono-lg text-deep-ink">0%</div>
+<div class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Anxiety Guarantee</div>
+</div>
+<div class="hidden sm:block w-px h-8 bg-surface-container-highest"></div>
+<div>
+<div class="font-financial-mono-lg text-financial-mono-lg text-income-green">99.4%</div>
+<div class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Goal Pocket Accuracy</div>
+</div>
+</div>
+</div>
+<!-- CORE 4-PILLAR FEATURE GRID -->
+<section class="py-28 relative">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="px-3.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">Pure Optical Clarity</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight mt-space-sm mb-space-xs">
+          Built for how humans actually spend.
+        </h2>
+<p class="font-body-md text-body-md text-muted-slate">
+          Forget rigid spreadsheets and overwhelming accounting jargon. Finora treats finances with water-clear transparency.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- CARD 1: AUTOMATED TRACKING -->
+<div class="group rounded-xl bg-surface-container-lowest/70 backdrop-blur-xl p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.06),0_12px_28px_rgba(10,46,68,0.06)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_20px_40px_rgba(10,46,68,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.9),0_6px_16px_rgba(66,101,93,0.15)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Frictionless Tracking</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+              Log chai, campus notes, or cab fares in under 2 taps with rapid numeric liquid keys and offline sync.
+            </p>
+</div>
+<!-- Interactive Micro-Pill Simulation -->
+<div class="p-2.5 rounded-full bg-surface-container/60 flex items-center justify-between text-muted-slate font-label-sm text-label-sm shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-label-md text-secondary">bolt</span> Instant Entry</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink">1.4 sec avg</span>
+</div>
+</div>
+<!-- CARD 2: DYNAMIC BUDGETS -->
+<div class="group rounded-xl bg-surface-container-lowest/70 backdrop-blur-xl p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.06),0_12px_28px_rgba(10,46,68,0.06)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_20px_40px_rgba(10,46,68,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.9),0_6px_16px_rgba(10,46,68,0.15)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">pie_chart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Dynamic Thresholds</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+              Visual spectrum caps. Turquoise when safe, amber when pacing fast, and coral before overstepping.
+            </p>
+</div>
+<!-- Three State Mini Liquid Indicator -->
+<div class="flex items-center gap-1.5">
+<div class="flex-1 h-2 rounded-full bg-income-green shadow-[0_0_6px_#15846C]"></div>
+<div class="flex-1 h-2 rounded-full bg-warning-amber"></div>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- CARD 3: GOAL POCKETS -->
+<div class="group rounded-xl bg-surface-container-lowest/70 backdrop-blur-xl p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.06),0_12px_28px_rgba(10,46,68,0.06)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_20px_40px_rgba(10,46,68,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-secondary-container/60 flex items-center justify-center text-on-secondary-container mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.9),0_6px_16px_rgba(66,101,93,0.15)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">savings</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Liquid Goal Pockets</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+              Lock money away into auto-filling vaults for new gear, semester breaks, or your emergency security fund.
+            </p>
+</div>
+<!-- Target Pill -->
+<div class="p-2 rounded-full bg-surface-container/60 flex items-center gap-space-xs text-deep-ink font-financial-mono-sm text-financial-mono-sm shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-income-green text-body-md">verified</span>
+<span>Goa Trip: ₹18,400 saved</span>
+</div>
+</div>
+<!-- CARD 4: SMART INSIGHTS -->
+<div class="group rounded-xl bg-surface-container-lowest/70 backdrop-blur-xl p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_rgba(10,46,68,0.06),0_12px_28px_rgba(10,46,68,0.06)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_20px_40px_rgba(10,46,68,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-full bg-primary-fixed-dim/40 flex items-center justify-center text-primary mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.9),0_6px_16px_rgba(10,46,68,0.15)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Calm Financial Logic</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+              Gentle heuristic insights that highlight hidden recurring subscriptions without shaming your habits.
+            </p>
+</div>
+<div class="p-2 rounded-full bg-income-green/10 text-income-green font-label-sm text-label-sm text-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.6)]">
+            + ₹1,200 saved in unread subs
+          </div>
+</div>
+</div>
+</section>
+<!-- 'HOW IT WORKS' 3-STEP SLEEK GLASS PIPELINE -->
+<section class="py-20 relative">
+<div class="rounded-xl bg-surface-container/50 backdrop-blur-2xl p-space-xl md:p-16 shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.9),0_20px_50px_rgba(10,46,68,0.07)]">
+<div class="max-w-xl mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Engineered Simplicity</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight mt-1 mb-2">How Finora flows with you</h2>
+<p class="font-body-md text-body-md text-muted-slate">Three seamless phases. Zero messy manual reconciliation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- STEP 1 -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),0_8px_24px_rgba(10,46,68,0.06)] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary-container text-pure-white font-financial-mono-md text-financial-mono-md flex items-center justify-center mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.4)]">
+                01
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Set Your Monthly Cap</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+                Define your campus pocket money, stipend, or freelance income. Finora auto-allocates dynamic guardrails.
+              </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low font-financial-mono-sm text-financial-mono-sm text-deep-ink flex items-center justify-between">
+<span>Monthly Target</span>
+<span class="text-secondary font-bold">₹30,000</span>
+</div>
+</div>
+<!-- STEP 2 -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),0_8px_24px_rgba(10,46,68,0.06)] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary text-pure-white font-financial-mono-md text-financial-mono-md flex items-center justify-center mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.4)]">
+                02
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Spend &amp; Tap</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+                Quick-record daily payments. The tactile 3D glass widgets recalculate your safe daily spend allowance instantly.
+              </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low font-financial-mono-sm text-financial-mono-sm text-income-green flex items-center justify-between">
+<span>Safe To Spend Today</span>
+<span class="font-bold">₹750.00</span>
+</div>
+</div>
+<!-- STEP 3 -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 p-space-lg shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),0_8px_24px_rgba(10,46,68,0.06)] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-secondary-fixed font-financial-mono-md text-financial-mono-md flex items-center justify-center mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.3)]">
+                03
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink mb-space-xs">Harvest Surplus Savings</h3>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-md">
+                Leftover amounts at month-end auto-route to designated Goal Pockets, building long-term liquidity without feeling restricted.
+              </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low font-financial-mono-sm text-financial-mono-sm text-secondary flex items-center justify-between">
+<span>Surplus Retained</span>
+<span class="font-bold">+ ₹4,200</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VISUAL EDITORIAL SHOWCASE WITH HIGH CONTRAST -->
+<section class="py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Visual Glass Metaphor Mockup -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-xl overflow-hidden shadow-[0_24px_60px_-10px_rgba(10,46,68,0.2)]">
+<img class="w-full h-[420px] object-cover" data-alt="Close up modern tactile crystal glass translucent buttons and interface lenses reflecting serene pale cyan light in studio lighting minimal product photography aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjNT__YcQqZVJo1KxOcJjXs2c68vlLOsnqjYyp75ap9pgL25W_a02L1P_MYTxc1UHvIfK4_p1NfJHDhV1Qa2oqAmvEjLNaTT9r9E2w0UDnZ9_zkdE-fsWZIsJTS7_ahh_z1UhH6n20FkKZRlHa9g4TjKDmMtqCLAOanX_D9kdIOHBru8tLikiGub5GQO_K7S0khKc2-CHPVGkx3hUbwmT0-SG8DJru6gV5Bwiv4d0O"/>
+<!-- Glass Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-deep-ink/90 via-deep-ink/30 to-transparent flex flex-col justify-end p-space-lg text-pure-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Sensory Tactility</span>
+<h4 class="font-headline-md text-headline-md tracking-tight">Interfaces that feel like hand-polished crystal.</h4>
+</div>
+</div>
+</div>
+<!-- Right Side Typographic Storytelling -->
+<div class="lg:col-span-6 flex flex-col gap-space-md pl-0 lg:pl-space-lg">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed w-fit font-label-sm text-label-sm uppercase tracking-widest">Digital Precision</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight">Designed for zero cognitive overhead.</h2>
+<p class="font-body-lg text-body-lg text-muted-slate">
+            Most budget trackers feel like punitive audits. Finora treats student finances like a polished lens—bringing focus to what gives you real joy, while silently guarding against wasteful subscription leaks.
+          </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-ink">100% on-device private data encryption by default.</p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-ink">Zero invasive third-party ads or credit card sales calls.</p>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-deep-ink">Direct UPI note categorization for Indian banking formats.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HIGH IMPACT BOTTOM CTA BANNER (DEEP SAPPHIRE GLASS) -->
+<section class="py-24 relative">
+<div class="rounded-xl bg-gradient-to-br from-primary-container via-deep-ink to-primary relative overflow-hidden p-space-xl md:p-20 text-center text-pure-white shadow-[inset_0_3px_3px_0_rgba(255,255,255,0.4),0_30px_70px_-15px_rgba(0,25,41,0.5)]">
+<!-- Convex Rim Top Refraction -->
+<div class="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-transparent via-pure-white/50 to-transparent"></div>
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-secondary-fixed/20 blur-[120px] pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-pure-white/10 backdrop-blur-xl flex items-center justify-center mb-space-md shadow-[inset_0_2px_2px_rgba(255,255,255,0.6)]">
+<span class="material-symbols-outlined text-secondary-fixed text-display-hero-mobile">diamond</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg tracking-tight mb-space-sm">
+            Experience absolute financial clarity today.
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mb-space-xl">
+            Join over 42,000 students and early-career creators making their money work as hard as they do. Free for student emails.
+          </p>
+<!-- 3D Convex Glossy CTA Button -->
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="px-10 py-4 rounded-full bg-gradient-to-b from-secondary to-tertiary-container text-pure-white font-label-lg text-label-lg shadow-[inset_0_3px_2px_0_rgba(255,255,255,0.95),inset_0_-2px_4px_0_rgba(0,0,0,0.4),0_18px_36px_-6px_rgba(66,101,93,0.5)] hover:shadow-[inset_0_3px_3px_0_rgba(255,255,255,1),0_24px_48px_-6px_rgba(66,101,93,0.7)] active:scale-95 transition-all duration-200 flex items-center gap-space-xs" href="#">
+<span>Claim Your Student Pass</span>
+<span class="material-symbols-outlined text-pure-white text-label-lg">arrow_forward</span>
+</a>
+<a class="px-8 py-4 rounded-full bg-pure-white/10 backdrop-blur-xl text-pure-white font-label-lg text-label-lg hover:bg-pure-white/20 active:scale-95 transition-all shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.3)]" href="#">
+              Browse Live Demo
+            </a>
+</div>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-md opacity-80">
+            No credit card required • Instant campus verification • Cancel anytime
+          </span>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-low/80 backdrop-blur-md py-space-xl mt-space-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]"><div class="max-w-7xl mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-pure-white text-body-sm">account_balance_wallet</span></div><span class="font-headline-sm text-headline-sm text-deep-ink">Finora</span><span class="font-body-sm text-body-sm text-muted-slate pl-space-xs">© 2025 Liquid Wealth Management</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Security &amp; Vault</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Guard</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Campus Network</a></div></div></footer></body></html>

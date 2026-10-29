@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#00504b","outline":"#73787d","surface-variant":"#e7e2da","on-secondary-container":"#476961","surface-tint":"#43627a","surface-dim":"#ded9d2","tertiary":"#001a18","income-green":"#15846C","background":"#fef9f1","surface-container":"#f2ede5","glass-highlight":"rgba(255, 255, 255, 0.95)","surface-bright":"#fef9f1","surface-container-low":"#f8f3eb","primary":"#001929","error-container":"#ffdad6","on-secondary-fixed-variant":"#2b4d45","primary-container":"#0a2e44","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#00201e","surface-container-highest":"#e7e2da","secondary-fixed-dim":"#a9cec4","outline-variant":"#c2c7cd","inverse-surface":"#32302b","primary-fixed":"#cae6ff","surface":"#fef9f1","inverse-primary":"#abcae6","on-surface":"#1d1c17","on-primary-container":"#7796b0","secondary":"#42655d","on-primary-fixed-variant":"#2b4a61","glass-surface":"rgba(255, 255, 255, 0.45)","secondary-container":"#c2e8dd","inverse-on-surface":"#f5f0e8","on-background":"#1d1c17","deep-ink":"#10232D","on-secondary-fixed":"#00201b","glass-border":"rgba(255, 255, 255, 0.65)","error":"#ba1a1a","tertiary-fixed":"#a7f0e8","muted-slate":"#667981","on-primary-fixed":"#001e30","surface-container-high":"#ece8e0","secondary-fixed":"#c5eae0","on-error":"#ffffff","on-tertiary-container":"#579e97","pure-white":"#FFFFFF","on-tertiary":"#ffffff","tertiary-fixed-dim":"#8cd3cc","warning-amber":"#E5A247","primary-fixed-dim":"#abcae6","on-error-container":"#93000a","glass-surface-dense":"rgba(255, 255, 255, 0.72)","tertiary-container":"#00312e","expense-coral":"#D96969","on-surface-variant":"#42474c"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","margin":"1rem","margin-tablet":"1.5rem","space-xl":"2rem","gutter":"1rem"},"fontFamily":{"label-md":["Inter"],"financial-mono-lg":["JetBrains Mono"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"financial-mono-md":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"financial-mono-sm":["JetBrains Mono"],"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"]},"fontSize":{"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"financial-mono-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"26px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"financial-mono-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"financial-mono-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-space-md top-space-md bottom-space-md w-72 bg-primary-container/95 backdrop-blur-xl rounded-lg z-50 flex flex-col py-space-lg shadow-[0_24px_48px_-8px_rgba(10,46,68,0.22)] border border-white/20"><div class="px-space-lg mb-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-primary-container font-headline-sm text-headline-sm font-bold shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.85)]">F</div><span class="font-headline-md text-headline-md text-pure-white font-bold tracking-tight">Finora</span></div><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded-full bg-white/10 text-primary-fixed">Pro</span></div><nav class="flex-1 px-space-sm space-y-1.5 overflow-y-auto" data-active-classes="bg-white/15 text-pure-white shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.4)]"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Dashboard</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="transactions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Transactions</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="budget-planner" href="#"><span class="material-symbols-outlined text-[20px]">pie_chart</span>Budget Planner</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="savings-goals" href="#"><span class="material-symbols-outlined text-[20px]">savings</span>Savings Goals</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Reports &amp; Analytics</a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-full text-on-primary-container hover:bg-white/10 hover:text-pure-white transition-all font-label-md text-label-md" data-path="smart-insights" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span>Smart Insights</a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-full transition-all font-label-md bg-white/15 text-pure-white shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.4)]" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Settings</a></nav><div class="px-space-md pt-space-md"><div class="p-space-md rounded-lg bg-white/5 border border-white/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-primary-container">Net Worth</span><span class="font-financial-mono-sm text-financial-mono-sm text-pure-white font-bold">₹8,45,200</span></div><span class="material-symbols-outlined text-secondary-fixed text-[20px]">trending_up</span></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center flex-1 max-w-md"><div class="w-full flex items-center gap-space-sm px-space-md py-2 bg-surface-container-lowest/80 backdrop-blur-md rounded-full shadow-[inset_0_1px_2px_rgba(10,46,68,0.06)]"><span class="material-symbols-outlined text-muted-slate text-[20px]">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-deep-ink placeholder:text-muted-slate focus:outline-none" placeholder="Search transactions, budgets, insights..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-expense-coral"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.6)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient lens glow -->
+<div class="relative w-full">
+<div class="absolute -top-10 right-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 left-10 w-80 h-80 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none"></div>
+<!-- Header Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl relative z-10">
+<div>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary-container text-deep-ink font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-muted-slate font-semibold">System Configuration</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight font-bold">Account &amp; Preferences</h1>
+<p class="font-body-md text-body-md text-muted-slate mt-1 max-w-2xl">
+          Manage your student profile, security, currency standards, and application preferences.
+        </p>
+</div>
+<!-- Quick Status Glass Badge -->
+<div class="flex items-center gap-space-sm p-1.5 pr-4 rounded-full bg-surface-container/70 backdrop-blur-md shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.9),0_4px_16px_-2px_rgba(10,46,68,0.06)]">
+<span class="w-2.5 h-2.5 rounded-full bg-income-green animate-pulse ml-2"></span>
+<span class="font-label-sm text-label-sm text-deep-ink font-semibold">Vault Cloud Sync: Active</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">v2.4.8</span>
+</div>
+</div>
+<!-- 2-Column Settings Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start relative z-10">
+<!-- Left Column: Navigation Pills Sticky Container -->
+<div class="lg:col-span-4 xl:col-span-3 sticky top-24 space-y-space-md">
+<!-- Student Pass Mini Identity Card -->
+<div class="rounded-lg p-space-md bg-surface-container-lowest/80 backdrop-blur-xl shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_4px_12px_rgba(10,46,68,0.12)]" data-alt="Portrait photo of Ananya Rao, a young South Asian female student designer with sleek eyeglasses smiling calmly against a bright minimal ivory architectural studio background with soft natural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAg7yYML3O8pdG55Dowq257V5X2Uxpf6TSsfcJiX89yMNJnKM7DbKBuLjr9bJZUeU_3oLxfIRCrr88ydkG42P6KNizy_7ONl7b1ZDvraiIs44WSyYnVZElgoDCMM1ygmYHqwWQ2QhMLZEDnQgegI5n7QnsL1lCnmJYC5N-NokgkieN3OjkBLofH27VQ0631Wit2eoRAgOaXskRUqV2XtOAc0rRja6aIhalTIdFdLHa"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-income-green flex items-center justify-center text-pure-white text-[10px] shadow-sm">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+</div>
+<div class="min-w-0 flex-1">
+<h3 class="font-headline-sm text-headline-sm text-deep-ink truncate font-bold">Ananya Rao</h3>
+<p class="font-label-sm text-label-sm text-muted-slate truncate">NID Bengaluru • Fellow</p>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between bg-surface-container-low/70 px-3 py-2 rounded-full">
+<span class="font-label-sm text-label-sm text-muted-slate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-income-green">school</span> Campus ID
+            </span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink font-bold">#BLR-2025-88</span>
+</div>
+</div>
+<!-- Navigation Segment Menu -->
+<nav class="p-2 rounded-lg bg-surface-container/60 backdrop-blur-lg shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.85)] flex flex-col space-y-1">
+<a class="flex items-center justify-between px-space-md py-3 rounded-full bg-surface-container-lowest text-deep-ink shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.95),0_6px_16px_-4px_rgba(10,46,68,0.12)] font-label-md text-label-md transition-all" href="#profile-identity">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-deep-ink">badge</span>
+<span>Profile &amp; Identity</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-deep-ink">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-3 rounded-full text-on-surface-variant hover:text-deep-ink hover:bg-surface-container-lowest/50 transition-all font-label-md text-label-md" href="#fiscal-currency">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">currency_rupee</span>
+<span>Currency &amp; Fiscal Rules</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-muted-slate opacity-60">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-3 rounded-full text-on-surface-variant hover:text-deep-ink hover:bg-surface-container-lowest/50 transition-all font-label-md text-label-md" href="#opening-balance">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">account_balance_wallet</span>
+<span>Opening Balance &amp; Wallets</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-muted-slate opacity-60">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-3 rounded-full text-on-surface-variant hover:text-deep-ink hover:bg-surface-container-lowest/50 transition-all font-label-md text-label-md" href="#notifications-alerts">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">notifications_active</span>
+<span>Notification Alerts</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-income-green"></span>
+</a>
+<a class="flex items-center justify-between px-space-md py-3 rounded-full text-on-surface-variant hover:text-deep-ink hover:bg-surface-container-lowest/50 transition-all font-label-md text-label-md" href="#security-privacy">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">shield</span>
+<span>Security &amp; Privacy</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-muted-slate opacity-60">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-3 rounded-full text-on-surface-variant hover:text-deep-ink hover:bg-surface-container-lowest/50 transition-all font-label-md text-label-md" href="#appearance-themes">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">palette</span>
+<span>Appearance &amp; Themes</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-muted-slate opacity-60">chevron_right</span>
+</a>
+</nav>
+<!-- Quick Storage Glass Gauge -->
+<div class="rounded-lg p-space-md bg-surface-container-low/60 backdrop-blur-md shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.8)]">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-deep-ink font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-muted-slate">cloud_done</span> Local Cache Storage
+            </span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate font-bold">14.2 MB / 100 MB</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden p-0.5 shadow-inner">
+<div class="h-full rounded-full bg-secondary-container" style="width: 14.2%;"></div>
+</div>
+<p class="font-label-sm text-label-sm text-muted-slate mt-2">Zero personal bank credentials stored locally.</p>
+</div>
+</div>
+<!-- Right Column: Grouped Liquid Glass Panels -->
+<div class="lg:col-span-8 xl:col-span-9 space-y-space-xl pb-24">
+<!-- PANEL 1: Profile Information Panel -->
+<section class="rounded-lg p-space-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.06),0_12px_32px_-6px_rgba(10,46,68,0.08)] relative overflow-hidden" id="profile-identity">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Identity • 01</span>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Profile Information</h2>
+</div>
+<!-- Verified Student Pass Pill -->
+<div class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-full bg-secondary-container/60 shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)]">
+<span class="material-symbols-outlined text-deep-ink text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-deep-ink font-bold tracking-tight">Verified Student Pass</span>
+</div>
+</div>
+<!-- Avatar & Meta Capsule -->
+<div class="flex flex-col sm:flex-row items-center gap-space-lg p-space-lg rounded-lg bg-surface-container-low/70 shadow-[inset_0_1px_2px_rgba(10,46,68,0.04)] mb-space-lg">
+<div class="relative group">
+<img class="w-20 h-20 rounded-full object-cover shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.9),0_6px_20px_rgba(10,46,68,0.15)]" data-alt="High resolution studio portrait of Ananya Rao with warm daylight, modern eyeglasses, smiling, dressed in soft teal linen shirt with ivory tones background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDISnGg6Rcdutl9B3vEqhlepW7eJazkYt_C7gBKAy07NxHET6-LlFMejFJMsAgrE0tHRKBBImWCfs77SrOipksZNDKpW146qpVmKVvkFnv3XU0rw_7FyWsSST8eA9mYxi1yEMJJCLVTDKiTQFapjyTh5_SG2dNvKAHHTfg1bv2d2xMKvcmx3pIM3g1OAjDH0OexSf_0dRxgDRL0iVYZRIcdIgBtvUHL-SbZCjygfD4E"/>
+<button class="absolute inset-0 rounded-full bg-deep-ink/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all text-pure-white" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</button>
+</div>
+<div class="flex-1 text-center sm:text-left">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-deep-ink font-bold">Ananya Rao</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-deep-ink font-medium">Fellow</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate">Product Designer &amp; Student Fellow • Bengaluru, Karnataka</p>
+<p class="font-financial-mono-sm text-financial-mono-sm text-deep-ink mt-0.5">ananya.rao@campus.finora.in</p>
+</div>
+<div>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-lowest hover:bg-pure-white text-deep-ink font-label-md text-label-md shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.95),0_6px_16px_rgba(10,46,68,0.08)] active:scale-98 transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span> Change Avatar
+              </button>
+</div>
+</div>
+<!-- Input Fields Form Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Full Name -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold flex items-center justify-between">
+<span>Legal Full Name</span>
+<span class="text-muted-slate">Verified via EduID</span>
+</label>
+<div class="h-12 rounded-full px-space-md bg-surface-container-lowest/80 backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.06)] flex items-center gap-2">
+<span class="material-symbols-outlined text-muted-slate text-[18px]">person</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-deep-ink focus:outline-none" type="text" value="Ananya Rao"/>
+</div>
+</div>
+<!-- Display Name -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Display / Ledger Alias</label>
+<div class="h-12 rounded-full px-space-md bg-surface-container-lowest/80 backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.06)] flex items-center gap-2">
+<span class="material-symbols-outlined text-muted-slate text-[18px]">alternate_email</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-deep-ink focus:outline-none" type="text" value="ananya.design"/>
+</div>
+</div>
+<!-- Campus / Institution -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Campus / Institution</label>
+<div class="h-12 rounded-full px-space-md bg-surface-container-lowest/80 backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.06)] flex items-center gap-2">
+<span class="material-symbols-outlined text-muted-slate text-[18px]">account_balance</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-deep-ink focus:outline-none" type="text" value="National Institute of Design"/>
+</div>
+</div>
+<!-- Graduation Year -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Graduation Year</label>
+<div class="h-12 rounded-full px-space-md bg-surface-container-lowest/80 backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.06)] flex items-center gap-2">
+<span class="material-symbols-outlined text-muted-slate text-[18px]">calendar_month</span>
+<input class="w-full bg-transparent font-financial-mono-md text-financial-mono-md text-deep-ink focus:outline-none" type="text" value="2025"/>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Undergrad</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PANEL 2: Fiscal & Currency Settings Panel -->
+<section class="rounded-lg p-space-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.06),0_12px_32px_-6px_rgba(10,46,68,0.08)]" id="fiscal-currency">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Accounting • 02</span>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Fiscal &amp; Currency Engine</h2>
+</div>
+<span class="material-symbols-outlined text-muted-slate text-[24px]">price_change</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Primary Currency Selector Card -->
+<div class="p-space-lg rounded-lg bg-surface-container-low/60 shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)] flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-muted-slate uppercase font-semibold">Primary Currency</span>
+<div class="flex items-center justify-between mt-2 mb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-deep-ink flex items-center justify-center font-bold">₹</span>
+<span class="font-headline-sm text-headline-sm text-deep-ink font-bold">INR - Indian Rupee</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-income-green/15 text-income-green font-bold">Default</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate">Lakhs &amp; Crores grouping notation: 1,00,000</p>
+</div>
+<!-- Format Preview Box -->
+<div class="mt-space-md p-space-md rounded-lg bg-surface-container-lowest/90 shadow-[inset_0_1px_2px_rgba(10,46,68,0.04)] flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-muted-slate">Live Render Format:</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹26,350.00</span>
+</div>
+</div>
+<!-- Month Start Cycle selector -->
+<div class="p-space-lg rounded-lg bg-surface-container-low/60 shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)] flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-muted-slate uppercase font-semibold">Monthly Fiscal Cycle</span>
+<div class="flex items-center gap-2 mt-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">event_repeat</span>
+<span class="font-headline-sm text-headline-sm text-deep-ink font-bold">1st of every month</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate">Cycle aligns with standard stipend allocations &amp; campus rent payments.</p>
+</div>
+<div class="mt-space-md flex gap-2">
+<button class="flex-1 py-2 px-3 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-deep-ink font-semibold shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.06)]" type="button">
+                  Standard (1st)
+                </button>
+<button class="flex-1 py-2 px-3 rounded-full bg-transparent font-label-sm text-label-sm text-muted-slate hover:text-deep-ink font-semibold" type="button">
+                  Salary Day (5th)
+                </button>
+<button class="flex-1 py-2 px-3 rounded-full bg-transparent font-label-sm text-label-sm text-muted-slate hover:text-deep-ink font-semibold" type="button">
+                  Custom
+                </button>
+</div>
+</div>
+</div>
+<!-- Opening Balance Ledger Card -->
+<div class="mt-space-lg p-space-lg rounded-lg bg-primary-container text-pure-white shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.2),0_16px_36px_-6px_rgba(10,46,68,0.2)] flex flex-col md:flex-row md:items-center justify-between gap-space-md" id="opening-balance">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase font-semibold tracking-wider">Baseline Capital Baseline</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-pure-white font-bold">Starting Onboarding Balance</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Established at initial setup on Jan 01, 2025.</p>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Configured Net</span>
+<span class="font-financial-mono-lg text-financial-mono-lg text-pure-white font-bold">₹26,350.00</span>
+</div>
+<button class="px-space-md py-3 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md text-pure-white font-label-md text-label-md shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.4),0_6px_16px_rgba(0,0,0,0.2)] active:scale-98 transition-all flex items-center gap-2" onclick="document.getElementById('opening-balance-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span> Update Opening Balance
+              </button>
+</div>
+</div>
+</section>
+<!-- PANEL 3: Theme & Glass Vibrancy Panel -->
+<section class="rounded-lg p-space-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.06),0_12px_32px_-6px_rgba(10,46,68,0.08)]" id="appearance-themes">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Optics • 03</span>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Theme &amp; Glass Vibrancy</h2>
+</div>
+<span class="material-symbols-outlined text-muted-slate text-[24px]">lens_blur</span>
+</div>
+<!-- Theme Segment Switcher (3D Pill Puck) -->
+<div class="space-y-space-md">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold block">Interface Illumination Spectrum</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Light Mode Selected -->
+<div class="relative p-space-lg rounded-lg bg-surface-bright shadow-[inset_0_2px_3px_rgba(255,255,255,0.95),0_12px_24px_-4px_rgba(10,46,68,0.1)] cursor-pointer">
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-deep-ink shadow-inner">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</div>
+<span class="w-6 h-6 rounded-full bg-income-green text-pure-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-deep-ink font-bold">Light Mode</h4>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">Milky tactile glass plates over warm ivory canvas.</p>
+<div class="mt-3 flex gap-1.5">
+<span class="w-4 h-4 rounded-full bg-[#fef9f1] shadow-inner"></span>
+<span class="w-4 h-4 rounded-full bg-[#c2e8dd]"></span>
+<span class="w-4 h-4 rounded-full bg-[#0a2e44]"></span>
+</div>
+</div>
+<!-- Dark Mode Option -->
+<div class="relative p-space-lg rounded-lg bg-primary-container text-pure-white shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.2),0_8px_20px_-4px_rgba(10,46,68,0.15)] opacity-85 hover:opacity-100 transition-opacity cursor-pointer">
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-pure-white">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</div>
+<span class="w-6 h-6 rounded-full bg-white/10 text-transparent flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">circle</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-pure-white font-bold">Dark Mode</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Midnight Sapphire refractive depth with cyan neon glow.</p>
+<div class="mt-3 flex gap-1.5">
+<span class="w-4 h-4 rounded-full bg-[#001929]"></span>
+<span class="w-4 h-4 rounded-full bg-[#0a2e44]"></span>
+<span class="w-4 h-4 rounded-full bg-[#a7f0e8]"></span>
+</div>
+</div>
+</div>
+<!-- Glass Vibrancy Intensity Slider -->
+<div class="p-space-lg rounded-lg bg-surface-container-low/60 shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)] mt-space-md">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_fix_high</span>
+<span class="font-label-md text-label-md text-deep-ink font-bold">Glass Vibrancy &amp; Refraction Index</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-deep-ink font-bold">High Reflection (Default)</span>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mb-4">Emulates physical convex acrylic refraction with top specular bevels.</p>
+<!-- Range Slider Track -->
+<div class="relative flex items-center">
+<input class="w-full h-2 rounded-full bg-surface-container appearance-none cursor-pointer accent-secondary" max="3" min="1" type="range" value="3"/>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-muted-slate mt-2">
+<span>Subtle Frost (Low)</span>
+<span>Balanced Acrylic (Mid)</span>
+<span class="text-deep-ink font-bold">High Reflection (Ultra)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PANEL 4: Notification & Heuristic Alerts -->
+<section class="rounded-lg p-space-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.06),0_12px_32px_-6px_rgba(10,46,68,0.08)]" id="notifications-alerts">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Heuristics • 04</span>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Proactive Spending Alerts</h2>
+</div>
+<span class="material-symbols-outlined text-muted-slate text-[24px]">notifications_paused</span>
+</div>
+<div class="space-y-space-md">
+<!-- Toggle 1: 80% Warning -->
+<div class="p-space-md rounded-lg bg-surface-container-low/70 flex items-center justify-between gap-space-md shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)]">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-warning-amber/15 text-warning-amber flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-deep-ink font-bold">80% Category Budget Warnings</h4>
+<p class="font-body-sm text-body-sm text-muted-slate">Instant soft ping before you exceed Dining, Books, or Transit caps.</p>
+</div>
+</div>
+<!-- 3D Toggle Pill (ON) -->
+<button class="w-12 h-6 rounded-full bg-income-green p-0.5 shadow-inner flex items-center justify-end transition-all" type="button">
+<span class="w-5 h-5 rounded-full bg-pure-white shadow-[0_2px_6px_rgba(0,0,0,0.2)]"></span>
+</button>
+</div>
+<!-- Toggle 2: Daily Evening Digest -->
+<div class="p-space-md rounded-lg bg-surface-container-low/70 flex items-center justify-between gap-space-md shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)]">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-deep-ink flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">wb_twilight</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-deep-ink font-bold">Daily Safe-to-Spend Evening Digest</h4>
+<p class="font-body-sm text-body-sm text-muted-slate">A calm 9:00 PM summary computing remaining runway till month end.</p>
+</div>
+</div>
+<!-- 3D Toggle Pill (ON) -->
+<button class="w-12 h-6 rounded-full bg-income-green p-0.5 shadow-inner flex items-center justify-end transition-all" type="button">
+<span class="w-5 h-5 rounded-full bg-pure-white shadow-[0_2px_6px_rgba(0,0,0,0.2)]"></span>
+</button>
+</div>
+<!-- Toggle 3: Milestone Celebrations -->
+<div class="p-space-md rounded-lg bg-surface-container-low/70 flex items-center justify-between gap-space-md shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.85)]">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-primary-container flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">celebration</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-deep-ink font-bold">Goal Milestone Celebrations</h4>
+<p class="font-body-sm text-body-sm text-muted-slate">Visual confetti ripples when campus emergency fund crosses targets.</p>
+</div>
+</div>
+<!-- 3D Toggle Pill (ON) -->
+<button class="w-12 h-6 rounded-full bg-income-green p-0.5 shadow-inner flex items-center justify-end transition-all" type="button">
+<span class="w-5 h-5 rounded-full bg-pure-white shadow-[0_2px_6px_rgba(0,0,0,0.2)]"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- PANEL 5: Danger Zone & Privacy -->
+<section class="rounded-lg p-space-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1px_2px_0_rgba(10,46,68,0.06),0_12px_32px_-6px_rgba(10,46,68,0.08)]" id="security-privacy">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-expense-coral font-bold">Security • 05</span>
+<h2 class="font-headline-md text-headline-md text-deep-ink font-bold">Data Governance &amp; Account Safeguards</h2>
+</div>
+<span class="material-symbols-outlined text-muted-slate text-[24px]">lock_reset</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Data Export -->
+<div class="p-space-lg rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div>
+<h4 class="font-label-lg text-label-lg text-deep-ink font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">file_download</span>
+                  Export Historical Ledgers
+                </h4>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">Download encrypted archive of all categorized transactions and budgets.</p>
+</div>
+<div class="mt-space-md flex gap-2">
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest hover:bg-pure-white text-deep-ink font-label-sm text-label-sm font-bold shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.08)] transition-all" type="button">
+                  JSON Vault
+                </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest hover:bg-pure-white text-deep-ink font-label-sm text-label-sm font-bold shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.08)] transition-all" type="button">
+                  Spreadsheet CSV
+                </button>
+</div>
+</div>
+<!-- Session Termination -->
+<div class="p-space-lg rounded-lg bg-surface-container-low/60 flex flex-col justify-between">
+<div>
+<h4 class="font-label-lg text-label-lg text-deep-ink font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-muted-slate">devices</span>
+                  Active Device Authentication
+                </h4>
+<p class="font-body-sm text-body-sm text-muted-slate mt-1">2 active browser sessions detected (MacBook Pro • iPhone 15).</p>
+</div>
+<div class="mt-space-md">
+<button class="w-full px-space-md py-2 rounded-full bg-surface-container-lowest hover:bg-pure-white text-deep-ink font-label-sm text-label-sm font-bold shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.08)] transition-all text-center" type="button">
+                  Sign Out of All Other Devices
+                </button>
+</div>
+</div>
+</div>
+<!-- Pure Destruction Strip -->
+<div class="p-space-md rounded-lg bg-expense-coral/5 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<h5 class="font-label-md text-label-md text-expense-coral font-bold">Permanent Ledger Deletion</h5>
+<p class="font-body-sm text-body-sm text-muted-slate">Wipes all cached tokens, analytics history, and student preferences permanently.</p>
+</div>
+<button class="px-space-md py-2 rounded-full text-expense-coral hover:bg-expense-coral/10 font-label-sm text-label-sm font-bold transition-all text-left sm:text-center whitespace-nowrap" type="button">
+              Delete Account
+            </button>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Liquid Action Bar -->
+<div class="fixed bottom-6 left-80 right-0 z-40 flex justify-center px-margin-desktop pointer-events-none">
+<div class="pointer-events-auto flex items-center gap-space-md p-2 rounded-full bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.08),0_20px_40px_-8px_rgba(10,46,68,0.22)]">
+<span class="font-label-sm text-label-sm text-muted-slate pl-4 hidden sm:inline">Unsaved modifications: 0</span>
+<div class="h-4 w-px bg-surface-variant hidden sm:inline"></div>
+<button class="px-space-lg py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-deep-ink font-label-md text-label-md transition-all" type="button">
+        Discard Changes
+      </button>
+<button class="px-space-xl py-2.5 rounded-full bg-secondary-container hover:bg-secondary-fixed text-deep-ink font-label-md text-label-md font-bold shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.9),0_8px_20px_-4px_rgba(21,132,108,0.3)] active:scale-98 transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+        Save Preferences
+      </button>
+</div>
+</div>
+<!-- In-page Opening Balance Modal Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-md hidden flex items-center justify-center p-4" id="opening-balance-modal">
+<div class="w-full max-w-md rounded-lg p-space-xl bg-surface-container-lowest/95 backdrop-blur-2xl shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.95),0_28px_60px_-12px_rgba(10,46,68,0.3)]">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">account_balance_wallet</span>
+<h3 class="font-headline-sm text-headline-sm text-deep-ink font-bold">Update Opening Balance</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-muted-slate hover:text-deep-ink" onclick="document.getElementById('opening-balance-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-muted-slate mb-space-lg">
+        Modifying this value will recompute historical ledger rollups from your initial onboarding timestamp.
+      </p>
+<div class="space-y-space-md mb-space-xl">
+<label class="font-label-sm text-label-sm text-deep-ink font-bold block">Target Opening Rupee Amount</label>
+<div class="h-14 rounded-full px-space-lg bg-surface-container-low backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.08)] flex items-center gap-2">
+<span class="font-financial-mono-lg text-financial-mono-lg text-muted-slate">₹</span>
+<input class="w-full bg-transparent font-financial-mono-lg text-financial-mono-lg text-deep-ink font-bold focus:outline-none" type="text" value="26,350.00"/>
+</div>
+</div>
+<div class="flex gap-space-md justify-end">
+<button class="px-space-md py-2.5 rounded-full bg-surface-container text-deep-ink font-label-md text-label-md" onclick="document.getElementById('opening-balance-modal').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+<button class="px-space-lg py-2.5 rounded-full bg-secondary-container hover:bg-secondary-fixed text-deep-ink font-label-md text-label-md font-bold shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.9)]" onclick="document.getElementById('opening-balance-modal').classList.add('hidden')" type="button">
+          Confirm Recalibration
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

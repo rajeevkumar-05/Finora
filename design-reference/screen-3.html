@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#73787d","primary-fixed":"#cae6ff","surface-container-highest":"#e7e2da","secondary":"#42655d","inverse-surface":"#32302b","on-secondary-fixed":"#00201b","surface-bright":"#fef9f1","surface-dim":"#ded9d2","tertiary-container":"#00312e","income-green":"#15846C","inverse-primary":"#abcae6","on-surface":"#1d1c17","tertiary-fixed-dim":"#8cd3cc","surface-container-lowest":"#ffffff","primary":"#001929","error":"#ba1a1a","on-primary-container":"#7796b0","primary-container":"#0a2e44","on-secondary-container":"#476961","on-primary":"#ffffff","secondary-fixed-dim":"#a9cec4","pure-white":"#FFFFFF","on-surface-variant":"#42474c","surface":"#fef9f1","on-error":"#ffffff","deep-ink":"#10232D","tertiary-fixed":"#a7f0e8","surface-tint":"#43627a","glass-surface":"rgba(255, 255, 255, 0.45)","surface-variant":"#e7e2da","on-error-container":"#93000a","on-tertiary-fixed-variant":"#00504b","background":"#fef9f1","glass-surface-dense":"rgba(255, 255, 255, 0.72)","primary-fixed-dim":"#abcae6","glass-border":"rgba(255, 255, 255, 0.65)","surface-container":"#f2ede5","on-primary-fixed":"#001e30","surface-container-high":"#ece8e0","expense-coral":"#D96969","on-tertiary-fixed":"#00201e","outline-variant":"#c2c7cd","secondary-fixed":"#c5eae0","muted-slate":"#667981","on-primary-fixed-variant":"#2b4a61","secondary-container":"#c2e8dd","inverse-on-surface":"#f5f0e8","on-secondary":"#ffffff","error-container":"#ffdad6","tertiary":"#001a18","on-tertiary":"#ffffff","warning-amber":"#E5A247","surface-container-low":"#f8f3eb","glass-highlight":"rgba(255, 255, 255, 0.95)","on-tertiary-container":"#579e97","on-background":"#1d1c17","on-secondary-fixed-variant":"#2b4d45"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin-tablet":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"financial-mono-sm":["JetBrains Mono"],"label-md":["Inter"],"financial-mono-md":["JetBrains Mono"],"label-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"financial-mono-lg":["JetBrains Mono"]},"fontSize":{"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"financial-mono-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"financial-mono-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"26px","fontWeight":"400"}],"financial-mono-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased relative min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-32 left-20 w-[600px] h-[600px] rounded-full bg-secondary-fixed/20 blur-[130px]"></div><div class="absolute top-1/3 -right-20 w-[550px] h-[550px] rounded-full bg-primary-fixed/25 blur-[140px]"></div><div class="absolute -bottom-40 left-1/3 w-[700px] h-[700px] rounded-full bg-surface-container-high/60 blur-[120px]"></div></div><aside class="fixed left-6 top-6 bottom-6 w-72 z-50 rounded-lg bg-primary-container/90 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[0_24px_48px_-8px_rgba(10,46,68,0.35),inset_0_1.5px_1.5px_0_rgba(255,255,255,0.4),inset_0_-1.5px_2px_0_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.8),0_4px_12px_rgba(66,101,93,0.3)]"><span class="material-symbols-outlined text-pure-white text-headline-sm">account_balance_wallet</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-pure-white tracking-tight">Finora</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Smart Wealth</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-pure-white/15 text-pure-white font-label-md shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.4)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span>Dashboard</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full transition-all bg-pure-white/15 text-pure-white font-label-md shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.4)]" data-path="transactions" href="#"><span class="material-symbols-outlined text-headline-sm">receipt_long</span>Transactions</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="budget-planner" href="#"><span class="material-symbols-outlined text-headline-sm">pie_chart</span>Budget Planner</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="savings-goals" href="#"><span class="material-symbols-outlined text-headline-sm">savings</span>Savings Goals</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-headline-sm">query_stats</span>Reports &amp; Analytics</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="smart-insights" href="#"><span class="material-symbols-outlined text-headline-sm">auto_awesome</span>Smart Insights</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-headline-sm">tune</span>Settings</a></nav></div><div class="flex flex-col gap-space-md pt-space-md bg-pure-white/5 rounded-DEFAULT p-space-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Monthly Safe-Spend</span><span class="font-label-sm text-label-sm text-tertiary-fixed">82%</span></div><div class="w-full h-1.5 rounded-full bg-primary overflow-hidden shadow-[inset_0_1px_2px_rgba(0,0,0,0.5)]"><div class="h-full rounded-full bg-secondary-fixed w-[82%]"></div></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-pure-white font-financial-mono-sm">₹34,200 Left</span><span class="font-label-sm text-label-sm text-on-primary-container">8 days</span></div></div></aside><div class="pl-[21.5rem] relative z-10"><header class="fixed top-0 left-[21.5rem] right-0 z-40 h-20 bg-surface/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(10,46,68,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-deep-ink">Hi, Ananya 👋</span><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-income-green animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary">Liquidity Healthy · ₹1,48,250 net worth</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-pure-white/80 backdrop-blur-md rounded-full px-space-md py-space-xs shadow-[inset_0_1px_2px_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.04)]"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink placeholder:text-outline w-56" placeholder="Search transactions, rules..." type="text"/></div><button aria-label="Quick Actions" class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_6px_16px_-2px_rgba(66,101,93,0.18)] hover:brightness-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-headline-sm">add</span></button><button aria-label="Notifications" class="w-10 h-10 rounded-full bg-pure-white/70 backdrop-blur-md text-on-surface flex items-center justify-center relative shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(10,46,68,0.06)] hover:bg-pure-white transition-all"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-expense-coral"></span></button><button aria-label="Theme Toggle" class="w-10 h-10 rounded-full bg-pure-white/70 backdrop-blur-md text-on-surface flex items-center justify-center shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(10,46,68,0.06)] hover:bg-pure-white transition-all"><span class="material-symbols-outlined text-headline-sm">light_mode</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_rgba(10,46,68,0.15)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgiVpO0C-PdgRIAKDR0dW0X3rg8cZjAF2elavcM3aiWU9e4qDWt124KU7-VgswxbYCzFOFWf84MQCRmgbaOdkbwPJ4xmrkyxOCL3OuoeQzMWXGTkx00VKFgcJcDMJS95ZEXCrr7EM0oxHeXkBX_LEs3wnUorisv-lvnSuyO9oCS-CtHI3M6gj0xXmtIekJ9UIgE-vTnjRcc6hC2e1kvpGTzTu-sHgU53HRwxX7iZp"/></div></div></div></header><main class="relative pt-20 w-full px-margin-desktop pb-margin-desktop"><div class="flex flex-col w-full gap-space-lg relative">
+<!-- Top Metric Overview Row -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-stretch">
+<!-- Opening Balance Card -->
+<div class="md:col-span-3 rounded-lg bg-surface-container-low/70 backdrop-blur-xl p-space-lg flex flex-col justify-between shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.06)] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Opening Balance</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1 rounded-full bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)] hover:bg-pure-white hover:scale-105 active:scale-95 transition-all text-deep-ink" id="editOpeningBtn">
+<span class="material-symbols-outlined text-sm">edit</span>
+<span class="font-label-sm text-label-sm">Edit</span>
+</button>
+</div>
+<div class="mt-space-md">
+<div class="font-financial-mono-lg text-financial-mono-lg text-deep-ink tracking-tight flex items-baseline gap-1">
+<span class="font-label-md text-label-md text-muted-slate">₹</span>18,000<span class="text-sm text-muted-slate">.00</span>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="material-symbols-outlined text-sm text-secondary">calendar_today</span>
+<span class="font-body-sm text-body-sm text-muted-slate">Cycle: 01 Oct – 31 Oct</span>
+</div>
+</div>
+</div>
+<!-- Current Balance Card (Hero Gloss Sapphire Liquid Glass) -->
+<div class="md:col-span-5 rounded-lg bg-primary-container/95 backdrop-blur-2xl p-space-lg text-pure-white flex flex-col justify-between shadow-[inset_0_2px_2.5px_0_rgba(255,255,255,0.5),inset_0_-2px_4px_0_rgba(0,0,0,0.4),0_20px_40px_-8px_rgba(10,46,68,0.35)] relative overflow-hidden">
+<div class="absolute -top-12 -right-8 w-44 h-44 rounded-full bg-tertiary-fixed/15 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-pure-white/10 backdrop-blur-md font-label-sm text-label-sm text-tertiary-fixed shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">Liquid Ledger</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Real-time Safe Net</span>
+</div>
+<div class="flex items-center gap-1 text-income-green bg-pure-white/10 px-2 py-0.5 rounded-full text-xs font-financial-mono-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)]">
+<span class="material-symbols-outlined text-xs">trending_up</span>+14.2%
+        </div>
+</div>
+<div class="my-space-sm relative z-10">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">Current Ledger Balance</span>
+<div class="font-display-hero text-display-hero text-pure-white flex items-baseline tracking-tight drop-shadow-sm">
+<span class="text-tertiary-fixed font-financial-mono-md text-financial-mono-md mr-1">₹</span>26,350<span class="text-on-primary-container text-headline-sm font-financial-mono-md">.80</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-primary-container font-body-sm text-body-sm pt-2 border-t-0 relative z-10">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span> ₹7,700 surplus cash cushion</span>
+<span class="font-financial-mono-sm text-pure-white">8 days to refresh</span>
+</div>
+</div>
+<!-- Total Spent & Quick Action Glass Capsule -->
+<div class="md:col-span-4 rounded-lg bg-surface-container-low/70 backdrop-blur-xl p-space-lg flex flex-col justify-between shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.06)]">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">Total Spent (Oct)</span>
+<div class="px-2 py-0.5 rounded-full bg-expense-coral/10 text-expense-coral font-financial-mono-sm text-xs">
+          ₹18,650.00
+        </div>
+</div>
+<!-- Linear Micro Progress Bar with Liquid Glow -->
+<div class="my-space-xs">
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-body-sm text-body-sm text-muted-slate">Monthly Limit ₹25,000</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-deep-ink">74.6%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high/80 p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.12)]">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-warning-amber w-[74.6%] shadow-[0_0_8px_rgba(66,101,93,0.5)]"></div>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 px-space-md rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-2px_3px_0_rgba(10,46,68,0.15),0_8px_20px_-3px_rgba(66,101,93,0.3)] hover:brightness-105 active:scale-95 transition-all cursor-pointer" id="openModalBtn">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+          Add Transaction
+        </button>
+<button class="py-2.5 px-space-md rounded-full bg-pure-white/70 backdrop-blur-md text-deep-ink font-label-md text-label-md flex items-center justify-center gap-1 shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),inset_0_-1px_1.5px_0_rgba(10,46,68,0.06),0_4px_14px_rgba(10,46,68,0.04)] hover:bg-pure-white active:scale-95 transition-all cursor-pointer" id="exportCsvBtn">
+<span class="material-symbols-outlined text-lg">download</span>
+          Export
+        </button>
+</div>
+</div>
+</section>
+<!-- Filter & Controls Glass Dock -->
+<section class="rounded-lg bg-surface-container-low/60 backdrop-blur-xl p-space-md shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.85),inset_0_-1.5px_2px_0_rgba(10,46,68,0.04),0_8px_24px_-4px_rgba(10,46,68,0.05)] flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- 3D Segmented Control Pill -->
+<div class="flex items-center p-1 rounded-full bg-surface-container-highest/60 backdrop-blur-md shadow-[inset_0_1px_2.5px_rgba(10,46,68,0.1)] w-full lg:w-auto">
+<button class="filter-tab active-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,1),0_4px_12px_rgba(10,46,68,0.08)] transition-all">
+        All (48)
+      </button>
+<button class="filter-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all">
+        Expenses Only
+      </button>
+<button class="filter-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all">
+        Income Only
+      </button>
+</div>
+<!-- Right Controls: Recessed Search & Dropdowns -->
+<div class="flex flex-wrap items-center gap-space-sm w-full lg:w-auto justify-end">
+<!-- Concave Glass Search Field -->
+<div class="flex items-center bg-pure-white/70 backdrop-blur-md rounded-full px-space-md py-2 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.08),0_2px_6px_rgba(255,255,255,0.9)] w-full sm:w-64 focus-within:ring-2 focus-within:ring-secondary/40 transition-all">
+<span class="material-symbols-outlined text-outline text-lg mr-space-xs">search</span>
+<input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink placeholder:text-outline w-full" id="txSearchInput" placeholder="Search merchant, tag, or note..." type="text"/>
+</div>
+<!-- Category Filter Dropdown Pill -->
+<div class="relative">
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-pure-white/70 backdrop-blur-md text-deep-ink font-label-md text-label-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.05)] hover:bg-pure-white transition-all cursor-pointer" id="categoryDropdownTrigger">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+<span id="selectedCategoryLabel">All Categories</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<!-- Date Range Selector Pill -->
+<div class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-pure-white/70 backdrop-blur-md text-deep-ink font-label-md text-label-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.05)] cursor-pointer hover:bg-pure-white transition-all">
+<span class="material-symbols-outlined text-base text-secondary">calendar_month</span>
+<span>Oct 2024</span>
+<span class="material-symbols-outlined text-base">arrow_drop_down</span>
+</div>
+</div>
+</section>
+<!-- Transaction Data Table Section -->
+<section class="rounded-lg bg-surface-container-low/50 backdrop-blur-xl p-space-md sm:p-space-lg shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.85),inset_0_-1.5px_2px_0_rgba(10,46,68,0.04),0_16px_36px_-6px_rgba(10,46,68,0.06)] overflow-hidden">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-deep-ink">October Transactions</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed text-xs font-label-sm">Live Sync</span>
+</div>
+<span class="font-body-sm text-body-sm text-muted-slate">Showing 6 of 48 transactions</span>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="transactionsTable">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider border-b-0">
+<th class="py-space-sm px-space-md">Date</th>
+<th class="py-space-sm px-space-md">Merchant &amp; Description</th>
+<th class="py-space-sm px-space-md">Category</th>
+<th class="py-space-sm px-space-md">Payment Method</th>
+<th class="py-space-sm px-space-md text-right">Amount (₹)</th>
+<th class="py-space-sm px-space-md text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="space-y-2">
+<!-- Item 1: Swiggy Dineout -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT shadow-[0_1px_0_rgba(10,46,68,0.03)]">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              24 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">08:42 PM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-orange-100/80 backdrop-blur-md flex items-center justify-center text-orange-600 shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-lg">restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Swiggy Dineout</span>
+<span class="font-body-sm text-xs text-muted-slate">Dinner with project teammates · Social</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-pure-white/80 font-label-sm text-label-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,1),0_1px_3px_rgba(10,46,68,0.05)]">
+                🍔 Food &amp; Dining
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">account_balance</span>
+<span>UPI · HDFC</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-expense-coral whitespace-nowrap">
+              - ₹650.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]" title="Quick View">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]" title="Delete">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Freelance UI Gig (Income) -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT bg-secondary-container/20 shadow-[0_1px_0_rgba(10,46,68,0.03)]">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              23 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">03:15 PM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-income-green/20 backdrop-blur-md flex items-center justify-center text-income-green shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(21,132,108,0.15)]">
+<span class="material-symbols-outlined text-lg">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Freelance UI Gig · Stealth Co</span>
+<span class="font-body-sm text-xs text-muted-slate">Milestone 2 Design Delivery Complete</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-income-green/15 text-income-green font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]">
+                💼 Client Earnings
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-income-green">
+<span class="material-symbols-outlined text-sm">swap_horiz</span>
+<span>Direct Bank IMPS</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-income-green whitespace-nowrap font-bold">
+              + ₹12,000.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">receipt</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Zomato Groceries -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT shadow-[0_1px_0_rgba(10,46,68,0.03)]">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              22 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">11:10 AM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-red-100/80 backdrop-blur-md flex items-center justify-center text-red-600 shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-lg">local_mall</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Zomato Groceries</span>
+<span class="font-body-sm text-xs text-muted-slate">Oats, Almond milk, Fresh Apples</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-pure-white/80 font-label-sm text-label-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,1),0_1px_3px_rgba(10,46,68,0.05)]">
+                🥦 Groceries
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">credit_card</span>
+<span>Debit Card · ICICI</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-expense-coral whitespace-nowrap">
+              - ₹420.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: Campus Bookstore -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT shadow-[0_1px_0_rgba(10,46,68,0.03)]">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              20 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">02:30 PM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-blue-100/80 backdrop-blur-md flex items-center justify-center text-blue-700 shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-lg">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Campus Bookstore</span>
+<span class="font-body-sm text-xs text-muted-slate">Financial Modeling Reference Textbook</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-pure-white/80 font-label-sm text-label-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,1),0_1px_3px_rgba(10,46,68,0.05)]">
+                📚 Education
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">account_balance_wallet</span>
+<span>UPI · Paytm</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-expense-coral whitespace-nowrap">
+              - ₹850.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: Uber Commute -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT shadow-[0_1px_0_rgba(10,46,68,0.03)]">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              19 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">09:12 AM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-gray-100/90 backdrop-blur-md flex items-center justify-center text-gray-800 shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-lg">directions_car</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Uber Commute</span>
+<span class="font-body-sm text-xs text-muted-slate">Hostel to Design Lab Transit</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-pure-white/80 font-label-sm text-label-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,1),0_1px_3px_rgba(10,46,68,0.05)]">
+                🚗 Transport
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">payments</span>
+<span>Cash on Trip</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-expense-coral whitespace-nowrap">
+              - ₹180.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Netflix Subscription -->
+<tr class="group hover:bg-pure-white/60 transition-all rounded-DEFAULT">
+<td class="py-space-md px-space-md font-financial-mono-sm text-financial-mono-sm text-muted-slate whitespace-nowrap">
+              18 Oct 2024
+              <span class="block text-xs font-body-sm text-outline">12:00 AM</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-red-200/60 backdrop-blur-md flex items-center justify-center text-red-700 shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-lg">movie</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm font-semibold text-deep-ink">Netflix Mobile Sub</span>
+<span class="font-body-sm text-xs text-muted-slate">Monthly recurring entertainment</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-pure-white/80 font-label-sm text-label-sm text-deep-ink shadow-[inset_0_1px_1px_rgba(255,255,255,1),0_1px_3px_rgba(10,46,68,0.05)]">
+                💡 Subscriptions
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">credit_card</span>
+<span>Auto-Debit · Card</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-financial-mono-md text-financial-mono-md text-expense-coral whitespace-nowrap">
+              - ₹199.00
+            </td>
+<td class="py-space-md px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-error flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)]">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Summary Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg mt-space-md border-t-0">
+<div class="font-body-sm text-body-sm text-muted-slate flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Automated bank sync updated 4 minutes ago via Finora Liquid Engine
+      </div>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-pure-white/80 hover:bg-pure-white text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)] transition-all">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed font-financial-mono-sm text-financial-mono-sm flex items-center justify-center shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_2px_6px_rgba(66,101,93,0.2)]">
+          1
+        </button>
+<button class="w-9 h-9 rounded-full bg-pure-white/70 hover:bg-pure-white text-deep-ink font-financial-mono-sm text-financial-mono-sm flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)]">
+          2
+        </button>
+<button class="w-9 h-9 rounded-full bg-pure-white/70 hover:bg-pure-white text-deep-ink font-financial-mono-sm text-financial-mono-sm flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)]">
+          3
+        </button>
+<button class="w-9 h-9 rounded-full bg-pure-white/80 hover:bg-pure-white text-deep-ink flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.9),0_2px_4px_rgba(10,46,68,0.04)] transition-all">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- FLOATING 'ADD TRANSACTION' LIQUID GLASS MODAL (Interactive with Realistic 3D Glass Look) -->
+<div class="fixed inset-0 z-50 bg-primary/30 backdrop-blur-md flex items-center justify-center p-space-md transition-opacity duration-300" id="modalBackdrop">
+<!-- Dimensional Frosted Crystal Modal Box -->
+<div class="w-full max-w-xl rounded-lg bg-surface/85 backdrop-blur-3xl p-space-xl shadow-[inset_0_2px_3px_0_rgba(255,255,255,1),inset_0_-2px_4px_0_rgba(10,46,68,0.08),0_32px_64px_-12px_rgba(10,46,68,0.28)] relative transform transition-transform duration-300 scale-100 flex flex-col gap-space-lg" id="modalBox">
+<!-- Top Crystal Bevel Highlight Specular Strip -->
+<div class="absolute top-0 left-8 right-8 h-1 bg-gradient-to-r from-transparent via-pure-white to-transparent opacity-90 rounded-full pointer-events-none"></div>
+<!-- Header: Title & Close Capsule -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.9),0_4px_10px_rgba(66,101,93,0.2)]">
+<span class="material-symbols-outlined text-xl">account_balance_wallet</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-deep-ink">Add New Transaction</h3>
+<p class="font-body-sm text-body-sm text-muted-slate">Record spending or fresh income instantaneously</p>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-pure-white/80 hover:bg-pure-white text-muted-slate hover:text-deep-ink flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.95),0_2px_6px_rgba(10,46,68,0.08)] active:scale-95 transition-all" id="closeModalBtn">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- 3D Convex Segmented Toggle (Expense vs Income) -->
+<div class="p-1 rounded-full bg-surface-container-high/70 backdrop-blur-md shadow-[inset_0_1.5px_2px_rgba(10,46,68,0.12)] flex items-center">
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md text-expense-coral bg-pure-white shadow-[inset_0_2px_2px_rgba(255,255,255,1),inset_0_-1px_2px_rgba(10,46,68,0.06),0_6px_16px_rgba(217,105,105,0.15)] flex items-center justify-center gap-1.5 transition-all" id="typeExpenseBtn">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+          Expense
+        </button>
+<button class="flex-1 py-2 rounded-full font-label-md text-label-md text-muted-slate hover:text-income-green flex items-center justify-center gap-1.5 transition-all" id="typeIncomeBtn">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+          Income
+        </button>
+</div>
+<!-- Hero Numeric Amount Well -->
+<div class="flex flex-col items-center justify-center p-space-lg rounded-lg bg-surface-container-low/70 backdrop-blur-xl shadow-[inset_0_2px_4px_rgba(10,46,68,0.06),inset_0_-1px_2px_rgba(255,255,255,0.8)] relative group focus-within:shadow-[inset_0_2px_4px_rgba(10,46,68,0.08),0_0_0_2px_rgba(66,101,93,0.35)] transition-all">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider mb-1">Enter Transaction Amount</span>
+<div class="flex items-center gap-2">
+<span class="font-financial-mono-lg text-headline-lg text-secondary">₹</span>
+<input class="bg-transparent border-none outline-none font-financial-mono-lg text-display-hero text-deep-ink w-44 text-center tracking-tight font-bold" id="txAmountInput" placeholder="0" type="number" value="450"/>
+</div>
+<span class="font-body-sm text-xs text-muted-slate mt-1">Indian Rupee (INR)</span>
+</div>
+<!-- Category Selector Pills (Inspired by Tactile Glass Buttons) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold flex items-center justify-between">
+<span>Select Category</span>
+<span class="text-xs text-muted-slate font-normal">Tap to toggle</span>
+</label>
+<div class="flex flex-wrap gap-2" id="categoryPills">
+<button class="category-pill active-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-secondary-fixed shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_1.5px_rgba(10,46,68,0.1),0_4px_10px_rgba(66,101,93,0.2)] flex items-center gap-1.5 transition-all">
+<span>🍕</span> Food &amp; Dining
+          </button>
+<button class="category-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.05)] hover:bg-pure-white flex items-center gap-1.5 transition-all">
+<span>🚗</span> Transport
+          </button>
+<button class="category-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.05)] hover:bg-pure-white flex items-center gap-1.5 transition-all">
+<span>🛍️</span> Shopping
+          </button>
+<button class="category-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.05)] hover:bg-pure-white flex items-center gap-1.5 transition-all">
+<span>💡</span> Utilities
+          </button>
+<button class="category-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.05)] hover:bg-pure-white flex items-center gap-1.5 transition-all">
+<span>📚</span> Education
+          </button>
+</div>
+</div>
+<!-- Form Grid: Date, Payment Method & Note -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Date Selection Capsule -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Transaction Date</label>
+<div class="h-11 px-4 rounded-full bg-pure-white/75 backdrop-blur-md shadow-[inset_0_1px_2.5px_rgba(10,46,68,0.06),0_1.5px_3px_rgba(255,255,255,0.9)] flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">calendar_today</span>
+<input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink w-full cursor-pointer" type="date" value="2024-10-24"/>
+</div>
+</div>
+<!-- Payment Method Dropdown Capsule -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Payment Mode</label>
+<div class="h-11 px-4 rounded-full bg-pure-white/75 backdrop-blur-md shadow-[inset_0_1px_2.5px_rgba(10,46,68,0.06),0_1.5px_3px_rgba(255,255,255,0.9)] flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">account_balance_wallet</span>
+<select class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink cursor-pointer w-full">
+<option value="upi">UPI (GPay / PhonePe)</option>
+<option value="debit">Debit Card (ICICI)</option>
+<option value="credit">Credit Card</option>
+<option value="cash">Cash in Hand</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Merchant / Note Capsule (Spans 2 columns) -->
+<div class="sm:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-deep-ink font-semibold">Merchant / Note</label>
+<div class="h-11 px-4 rounded-full bg-pure-white/75 backdrop-blur-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.08),0_1.5px_3px_rgba(255,255,255,0.9)] flex items-center gap-2 focus-within:ring-2 focus-within:ring-secondary/40 transition-all">
+<span class="material-symbols-outlined text-outline text-base">edit_note</span>
+<input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink placeholder:text-outline w-full" id="txNoteInput" placeholder="e.g. Swiggy order, Amazon textbook" type="text" value="Lunch with college team"/>
+</div>
+</div>
+</div>
+<!-- Bottom Action Liquid Pill Buttons -->
+<div class="flex items-center justify-end gap-space-md pt-space-xs">
+<button class="px-6 py-2.5 rounded-full bg-pure-white/70 backdrop-blur-md text-muted-slate hover:text-deep-ink font-label-md text-label-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_8px_rgba(10,46,68,0.04)] active:scale-95 transition-all" id="cancelModalBtn">
+          Cancel
+        </button>
+<button class="px-8 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md flex items-center gap-2 shadow-[inset_0_2px_2px_0_rgba(255,255,255,1),inset_0_-2px_3px_0_rgba(10,46,68,0.18),0_10px_24px_-4px_rgba(66,101,93,0.35)] hover:brightness-105 active:scale-95 transition-all cursor-pointer" id="saveTransactionBtn">
+<span>Save Transaction</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // DOM Elements
+  const modalBackdrop = document.getElementById('modalBackdrop');
+  const openModalBtn = document.getElementById('openModalBtn');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const cancelModalBtn = document.getElementById('cancelModalBtn');
+  const saveTransactionBtn = document.getElementById('saveTransactionBtn');
+  const typeExpenseBtn = document.getElementById('typeExpenseBtn');
+  const typeIncomeBtn = document.getElementById('typeIncomeBtn');
+  const categoryPills = document.querySelectorAll('.category-pill');
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const txSearchInput = document.getElementById('txSearchInput');
+  const tableRows = document.querySelectorAll('#transactionsTable tbody tr');
+
+  // Open & Close Modal Functionality
+  function openModal() {
+    modalBackdrop.classList.remove('hidden');
+    modalBackdrop.classList.add('flex');
+    setTimeout(() => {
+      modalBackdrop.classList.remove('opacity-0');
+      document.getElementById('modalBox').classList.remove('scale-95');
+    }, 10);
+  }
+
+  function closeModal() {
+    modalBackdrop.classList.add('opacity-0');
+    document.getElementById('modalBox').classList.add('scale-95');
+    setTimeout(() => {
+      modalBackdrop.classList.add('hidden');
+      modalBackdrop.classList.remove('flex');
+    }, 250);
+  }
+
+  openModalBtn.addEventListener('click', openModal);
+  closeModalBtn.addEventListener('click', closeModal);
+  cancelModalBtn.addEventListener('click', closeModal);
+
+  // Close on Backdrop Click
+  modalBackdrop.addEventListener('click', (e) => {
+    if (e.target === modalBackdrop) {
+      closeModal();
+    }
+  });
+
+  // Toggle Expense / Income in Modal
+  typeExpenseBtn.addEventListener('click', () => {
+    typeExpenseBtn.className = "flex-1 py-2 rounded-full font-label-md text-label-md text-expense-coral bg-pure-white shadow-[inset_0_2px_2px_rgba(255,255,255,1),inset_0_-1px_2px_rgba(10,46,68,0.06),0_6px_16px_rgba(217,105,105,0.15)] flex items-center justify-center gap-1.5 transition-all";
+    typeIncomeBtn.className = "flex-1 py-2 rounded-full font-label-md text-label-md text-muted-slate hover:text-income-green flex items-center justify-center gap-1.5 transition-all";
+  });
+
+  typeIncomeBtn.addEventListener('click', () => {
+    typeIncomeBtn.className = "flex-1 py-2 rounded-full font-label-md text-label-md text-income-green bg-pure-white shadow-[inset_0_2px_2px_rgba(255,255,255,1),inset_0_-1px_2px_rgba(10,46,68,0.06),0_6px_16px_rgba(21,132,108,0.15)] flex items-center justify-center gap-1.5 transition-all";
+    typeExpenseBtn.className = "flex-1 py-2 rounded-full font-label-md text-label-md text-muted-slate hover:text-expense-coral flex items-center justify-center gap-1.5 transition-all";
+  });
+
+  // Category Pills Selection in Modal
+  categoryPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      categoryPills.forEach(p => {
+        p.className = "category-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white/70 backdrop-blur-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_2px_6px_rgba(10,46,68,0.05)] hover:bg-pure-white flex items-center gap-1.5 transition-all";
+      });
+      pill.className = "category-pill active-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-secondary-fixed shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),inset_0_-1px_1.5px_rgba(10,46,68,0.1),0_4px_10px_rgba(66,101,93,0.2)] flex items-center gap-1.5 transition-all";
+    });
+  });
+
+  // Table Tabs Filter Interaction
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.className = "filter-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-muted-slate hover:text-deep-ink transition-all";
+      });
+      tab.className = "filter-tab active-tab px-4 py-1.5 rounded-full font-label-md text-label-md text-deep-ink bg-pure-white shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,1),0_4px_12px_rgba(10,46,68,0.08)] transition-all";
+
+      const text = tab.innerText.toLowerCase();
+      tableRows.forEach(row => {
+        const isIncome = row.innerText.includes('+ ₹');
+        if (text.includes('expenses') && isIncome) {
+          row.style.display = 'none';
+        } else if (text.includes('income') && !isIncome) {
+          row.style.display = 'none';
+        } else {
+          row.style.display = '';
+        }
+      });
+    });
+  });
+
+  // Simple Real-time Search Filter
+  txSearchInput.addEventListener('input', (e) => {
+    const val = e.target.value.toLowerCase();
+    tableRows.forEach(row => {
+      const match = row.innerText.toLowerCase().includes(val);
+      row.style.display = match ? '' : 'none';
+    });
+  });
+
+  // Save Transaction Toast feedback
+  saveTransactionBtn.addEventListener('click', () => {
+    saveTransactionBtn.innerHTML = `<span>Saved!</span><span class="material-symbols-outlined text-base">check</span>`;
+    setTimeout(() => {
+      closeModal();
+      saveTransactionBtn.innerHTML = `<span>Save Transaction</span><span class="material-symbols-outlined text-base">north_east</span>`;
+    }, 600);
+  });
+</script></main></div></body></html>

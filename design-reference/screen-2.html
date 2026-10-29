@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#73787d","primary-fixed":"#cae6ff","surface-container-highest":"#e7e2da","secondary":"#42655d","inverse-surface":"#32302b","on-secondary-fixed":"#00201b","surface-bright":"#fef9f1","surface-dim":"#ded9d2","tertiary-container":"#00312e","income-green":"#15846C","inverse-primary":"#abcae6","on-surface":"#1d1c17","tertiary-fixed-dim":"#8cd3cc","surface-container-lowest":"#ffffff","primary":"#001929","error":"#ba1a1a","on-primary-container":"#7796b0","primary-container":"#0a2e44","on-secondary-container":"#476961","on-primary":"#ffffff","secondary-fixed-dim":"#a9cec4","pure-white":"#FFFFFF","on-surface-variant":"#42474c","surface":"#fef9f1","on-error":"#ffffff","deep-ink":"#10232D","tertiary-fixed":"#a7f0e8","surface-tint":"#43627a","glass-surface":"rgba(255, 255, 255, 0.45)","surface-variant":"#e7e2da","on-error-container":"#93000a","on-tertiary-fixed-variant":"#00504b","background":"#fef9f1","glass-surface-dense":"rgba(255, 255, 255, 0.72)","primary-fixed-dim":"#abcae6","glass-border":"rgba(255, 255, 255, 0.65)","surface-container":"#f2ede5","on-primary-fixed":"#001e30","surface-container-high":"#ece8e0","expense-coral":"#D96969","on-tertiary-fixed":"#00201e","outline-variant":"#c2c7cd","secondary-fixed":"#c5eae0","muted-slate":"#667981","on-primary-fixed-variant":"#2b4a61","secondary-container":"#c2e8dd","inverse-on-surface":"#f5f0e8","on-secondary":"#ffffff","error-container":"#ffdad6","tertiary":"#001a18","on-tertiary":"#ffffff","warning-amber":"#E5A247","surface-container-low":"#f8f3eb","glass-highlight":"rgba(255, 255, 255, 0.95)","on-tertiary-container":"#579e97","on-background":"#1d1c17","on-secondary-fixed-variant":"#2b4d45"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin-tablet":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"financial-mono-sm":["JetBrains Mono"],"label-md":["Inter"],"financial-mono-md":["JetBrains Mono"],"label-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-lg":["Inter"],"financial-mono-lg":["JetBrains Mono"]},"fontSize":{"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"financial-mono-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"financial-mono-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"26px","fontWeight":"400"}],"financial-mono-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased relative min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-32 left-20 w-[600px] h-[600px] rounded-full bg-secondary-fixed/20 blur-[130px]"></div><div class="absolute top-1/3 -right-20 w-[550px] h-[550px] rounded-full bg-primary-fixed/25 blur-[140px]"></div><div class="absolute -bottom-40 left-1/3 w-[700px] h-[700px] rounded-full bg-surface-container-high/60 blur-[120px]"></div></div><aside class="fixed left-6 top-6 bottom-6 w-72 z-50 rounded-lg bg-primary-container/90 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[0_24px_48px_-8px_rgba(10,46,68,0.35),inset_0_1.5px_1.5px_0_rgba(255,255,255,0.4),inset_0_-1.5px_2px_0_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.8),0_4px_12px_rgba(66,101,93,0.3)]"><span class="material-symbols-outlined text-pure-white text-headline-sm">account_balance_wallet</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-pure-white tracking-tight">Finora</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Smart Wealth</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-pure-white/15 text-pure-white font-label-md shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.4)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span>Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="transactions" href="#"><span class="material-symbols-outlined text-headline-sm">receipt_long</span>Transactions</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full transition-all bg-pure-white/15 text-pure-white font-label-md shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.4)]" data-path="budget-planner" href="#"><span class="material-symbols-outlined text-headline-sm">pie_chart</span>Budget Planner</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="savings-goals" href="#"><span class="material-symbols-outlined text-headline-sm">savings</span>Savings Goals</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-headline-sm">query_stats</span>Reports &amp; Analytics</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="smart-insights" href="#"><span class="material-symbols-outlined text-headline-sm">auto_awesome</span>Smart Insights</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full font-label-md text-label-md text-on-primary-container hover:bg-pure-white/10 hover:text-pure-white transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-headline-sm">tune</span>Settings</a></nav></div><div class="flex flex-col gap-space-md pt-space-md bg-pure-white/5 rounded-DEFAULT p-space-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Monthly Safe-Spend</span><span class="font-label-sm text-label-sm text-tertiary-fixed">82%</span></div><div class="w-full h-1.5 rounded-full bg-primary overflow-hidden shadow-[inset_0_1px_2px_rgba(0,0,0,0.5)]"><div class="h-full rounded-full bg-secondary-fixed w-[82%]"></div></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-pure-white font-financial-mono-sm">₹34,200 Left</span><span class="font-label-sm text-label-sm text-on-primary-container">8 days</span></div></div></aside><div class="pl-[21.5rem] relative z-10"><header class="fixed top-0 left-[21.5rem] right-0 z-40 h-20 bg-surface/70 backdrop-blur-xl shadow-[0_1px_12px_rgba(10,46,68,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-deep-ink">Hi, Ananya 👋</span><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-income-green animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary">Liquidity Healthy · ₹1,48,250 net worth</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-pure-white/80 backdrop-blur-md rounded-full px-space-md py-space-xs shadow-[inset_0_1px_2px_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.04)]"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-deep-ink placeholder:text-outline w-56" placeholder="Search transactions, rules..." type="text"/></div><button aria-label="Quick Actions" class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_6px_16px_-2px_rgba(66,101,93,0.18)] hover:brightness-105 active:scale-95 transition-all"><span class="material-symbols-outlined text-headline-sm">add</span></button><button aria-label="Notifications" class="w-10 h-10 rounded-full bg-pure-white/70 backdrop-blur-md text-on-surface flex items-center justify-center relative shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(10,46,68,0.06)] hover:bg-pure-white transition-all"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-expense-coral"></span></button><button aria-label="Theme Toggle" class="w-10 h-10 rounded-full bg-pure-white/70 backdrop-blur-md text-on-surface flex items-center justify-center shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,0.9),0_4px_12px_rgba(10,46,68,0.06)] hover:bg-pure-white transition-all"><span class="material-symbols-outlined text-headline-sm">light_mode</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_rgba(10,46,68,0.15)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnde8vDYB2iPajE4baPIwkeQMyxfBX-L1p1l2LnqwFfnvjdd6nKN4p_qP0fj8Z8AxXckn5PbfeF66Z79Vlt8CToKjL5DdHZpyli6JLrJ1tnwzhE5djbxgaea4mCJsaBCXtQl0lVQhwhKvBQp2kb7p_kNhrA6nF3RXHZLj4efPeaeKb-ZHegBLmq4iWlvSZAZGxZq30zJw_FqArz88CkN3-_VkdUV4HCsaJiCJR7S1a"/></div></div></div></header><main class="relative pt-20 w-full px-margin-desktop pb-margin-desktop"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Control Bar: Month Switcher & Quick Actions -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<!-- 3D Liquid Lens Month Switcher -->
+<div class="flex items-center bg-surface-container/70 backdrop-blur-xl rounded-full p-1.5 shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,0.9),inset_0_-1.5px_2px_0_rgba(10,46,68,0.08),0_10px_24px_-4px_rgba(10,46,68,0.08)]">
+<button class="w-9 h-9 rounded-full bg-pure-white/80 hover:bg-pure-white text-deep-ink flex items-center justify-center transition-all duration-200 active:scale-95 shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,1),0_4px_10px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-headline-sm">chevron_left</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-md">
+<span class="material-symbols-outlined text-secondary text-headline-sm">calendar_month</span>
+<span class="font-headline-sm text-headline-sm text-deep-ink tracking-tight">October 2024</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-pure-white/80 hover:bg-pure-white text-deep-ink flex items-center justify-center transition-all duration-200 active:scale-95 shadow-[inset_0_1.5px_1.5px_0_rgba(255,255,255,1),0_4px_10px_rgba(10,46,68,0.06)]">
+<span class="material-symbols-outlined text-headline-sm">chevron_right</span>
+</button>
+</div>
+<!-- Days Countdown Pill -->
+<div class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-[inset_0_1px_1.5px_0_rgba(255,255,255,0.8),0_4px_12px_rgba(10,46,68,0.05)]">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-md text-label-md text-deep-ink">11 days remaining</span>
+<span class="font-label-sm text-label-sm text-muted-slate uppercase tracking-wider">in cycle</span>
+</div>
+</div>
+<!-- Quick Tool Actions -->
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="group flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-pure-white/80 hover:bg-pure-white backdrop-blur-xl text-deep-ink font-label-md text-label-md shadow-[inset_0_2px_2px_0_rgba(255,255,255,1),inset_0_-2px_2px_0_rgba(10,46,68,0.07),0_10px_25px_-5px_rgba(10,46,68,0.08)] active:scale-98 transition-all">
+<span class="material-symbols-outlined text-secondary text-headline-sm group-hover:rotate-180 transition-transform duration-500">history</span>
+<span>Past Cycles</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-primary-container text-pure-white font-label-md text-label-md shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.4),inset_0_-2px_2px_0_rgba(0,0,0,0.4),0_12px_28px_-6px_rgba(10,46,68,0.35)] hover:bg-primary-container/90 active:scale-98 transition-all" id="editBudgetBtn">
+<span class="material-symbols-outlined text-tertiary-fixed text-headline-sm">edit_square</span>
+<span>Edit Monthly Budget</span>
+</button>
+</div>
+</div>
+<!-- Master Budget Summary: 3D Liquid Lens Hero Card -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-deep-ink to-primary p-space-xl text-pure-white shadow-[inset_0_2px_3px_0_rgba(255,255,255,0.45),inset_0_-2px_3px_0_rgba(0,0,0,0.5),0_24px_50px_-10px_rgba(10,46,68,0.35)]">
+<!-- Fluid ambient refractive glow behind glass -->
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-[100px] pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-80 h-80 rounded-full bg-tertiary-fixed/15 blur-[90px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Total Monthly Allowance</span>
+<span class="px-2 py-0.5 rounded-full bg-pure-white/10 font-label-sm text-label-sm text-on-primary-container backdrop-blur-md">Auto-rebalanced</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero text-display-hero font-financial-mono-lg tracking-tight text-pure-white">₹26,000<span class="text-on-primary-container font-financial-mono-md">.00</span></span>
+<span class="font-label-md text-label-md text-secondary-fixed bg-secondary-fixed/15 px-3 py-1 rounded-full backdrop-blur-md">Target: Zero Deficit</span>
+</div>
+</div>
+<!-- 3-Pill Real-time Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Spent -->
+<div class="rounded-DEFAULT bg-pure-white/5 backdrop-blur-xl p-space-md shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.25),inset_0_-1px_1px_rgba(0,0,0,0.2)] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Spent So Far</span>
+<span class="font-financial-mono-md text-financial-mono-md text-pure-white mt-1">₹18,650</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed mt-0.5">71.7% of ceiling</span>
+</div>
+<!-- Safe to spend -->
+<div class="rounded-DEFAULT bg-pure-white/10 backdrop-blur-xl p-space-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.4),inset_0_-1px_1px_rgba(0,0,0,0.2)] flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Safe-to-Spend</span>
+<span class="font-financial-mono-md text-financial-mono-md text-pure-white mt-1">₹7,350</span>
+<span class="font-label-sm text-label-sm text-on-primary-container mt-0.5">Available balance</span>
+</div>
+<!-- Daily Recommended Pace -->
+<div class="rounded-DEFAULT bg-pure-white/5 backdrop-blur-xl p-space-md shadow-[inset_0_1.5px_1px_rgba(255,255,255,0.25),inset_0_-1px_1px_rgba(0,0,0,0.2)] flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Daily Velocity</span>
+<span class="font-financial-mono-md text-financial-mono-md text-tertiary-fixed mt-1">₹668<span class="text-body-sm font-body-sm text-on-primary-container">/day</span></span>
+<span class="font-label-sm text-label-sm text-income-green mt-0.5">Healthy pace</span>
+</div>
+</div>
+</div>
+<!-- Segmented Tactile Progress Runway -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-primary-container">
+<span>Overall Consumption Runway</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-pure-white">71.7% Consumed (₹7,350 cushion)</span>
+</div>
+<div class="relative w-full h-4 rounded-full bg-primary/60 p-0.5 backdrop-blur-md shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary-fixed via-warning-amber to-expense-coral w-[71.7%] shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_0_12px_rgba(197,234,224,0.4)] relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-pure-white shadow-[0_2px_6px_rgba(0,0,0,0.4)] border-2 border-secondary-fixed"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-primary-container pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed inline-block"></span> Fixed: ₹10,000</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-warning-amber inline-block"></span> Variable: ₹8,650</span>
+</div>
+<span>Refreshes Nov 1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Allocations Header -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Active Buckets</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight">Category Budgets</h2>
+</div>
+<!-- Filter Segment Pill -->
+<div class="hidden sm:flex items-center bg-surface-container/80 backdrop-blur-xl p-1 rounded-full shadow-[inset_0_1px_2px_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.04)]">
+<button class="px-space-md py-1.5 rounded-full bg-pure-white text-deep-ink font-label-md text-label-md shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,1),0_2px_8px_rgba(10,46,68,0.08)]">All (5)</button>
+<button class="px-space-md py-1.5 rounded-full text-muted-slate hover:text-deep-ink font-label-md text-label-md transition-colors">Needs</button>
+<button class="px-space-md py-1.5 rounded-full text-muted-slate hover:text-deep-ink font-label-md text-label-md transition-colors">Wants</button>
+</div>
+</div>
+<!-- Category Budgets Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Food & Dining (Amber Limit Alert) -->
+<div class="group relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-warning-amber/15 text-warning-amber flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.8),0_4px_12px_rgba(229,162,71,0.2)]">
+<span class="material-symbols-outlined text-headline-sm">restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Food &amp; Dining</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Swiggy, Groceries, Cafes</span>
+</div>
+</div>
+<!-- 3D Liquid Warning Pill -->
+<span class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-warning-amber/15 text-warning-amber font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.6)]">
+<span class="material-symbols-outlined text-body-sm">warning</span> 91%
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink">₹6,400</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Allocated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate">₹7,000</span>
+</div>
+</div>
+<!-- Progress Tube -->
+<div class="w-full h-3 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-warning-amber w-[91%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_2px_8px_rgba(229,162,71,0.4)]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-warning-amber flex items-center gap-1 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-warning-amber"></span>
+          Approaching limit (₹600 left)
+        </span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest text-deep-ink flex items-center justify-center transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-md">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Rent & Maintenance (Exact 100%) -->
+<div class="group relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/50 text-secondary flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_4px_12px_rgba(66,101,93,0.15)]">
+<span class="material-symbols-outlined text-headline-sm">apartment</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Rent &amp; Housing</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Flat share, Society dues</span>
+</div>
+</div>
+<!-- Tactile Pill -->
+<span class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed/40 text-secondary font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]">
+<span class="material-symbols-outlined text-body-sm">check_circle</span> 100%
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink">₹8,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Allocated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate">₹8,000</span>
+</div>
+</div>
+<!-- Progress Tube -->
+<div class="w-full h-3 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary w-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Exact on budget (Fully Paid)
+        </span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest text-deep-ink flex items-center justify-center transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-md">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Shopping & Lifestyle (Over budget Coral) -->
+<div class="group relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-expense-coral/15 text-expense-coral flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.8),0_4px_12px_rgba(217,105,105,0.2)]">
+<span class="material-symbols-outlined text-headline-sm">shopping_bag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Shopping &amp; Style</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Apparel, Gadgets, Books</span>
+</div>
+</div>
+<!-- Coral Alert Pill -->
+<span class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-expense-coral/15 text-expense-coral font-label-sm text-label-sm font-semibold shadow-[inset_0_1px_1px_rgba(255,255,255,0.6)]">
+<span class="material-symbols-outlined text-body-sm">error</span> 124%
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-expense-coral font-bold">₹3,100</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Allocated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate">₹2,500</span>
+</div>
+</div>
+<!-- Over-budget Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.1)] overflow-hidden">
+<div class="h-full rounded-full bg-expense-coral w-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_2px_8px_rgba(217,105,105,0.4)]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-expense-coral flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-expense-coral animate-ping"></span>
+          +₹600 Exceeded cap
+        </span>
+<button class="px-2 py-0.5 rounded-full bg-expense-coral/10 hover:bg-expense-coral/20 text-expense-coral font-label-sm text-label-sm transition-colors">
+          Trim Budget
+        </button>
+</div>
+</div>
+<!-- Card 4: Transport & Commute (Healthy Turquoise) -->
+<div class="group relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/50 text-secondary flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_4px_12px_rgba(66,101,93,0.15)]">
+<span class="material-symbols-outlined text-headline-sm">directions_subway</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Transport</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Metro, Uber, Fuel</span>
+</div>
+</div>
+<!-- Turquoise Healthy Pill -->
+<span class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-sm">check</span> 48%
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink">₹1,450</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Allocated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate">₹3,000</span>
+</div>
+</div>
+<!-- Progress Tube -->
+<div class="w-full h-3 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary-fixed w-[48%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_2px_8px_rgba(197,234,224,0.4)]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+          Healthy (₹1,550 remaining)
+        </span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest text-deep-ink flex items-center justify-center transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-md">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Utilities & Internet (Healthy 60%) -->
+<div class="group relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.05),0_12px_28px_-6px_rgba(10,46,68,0.08)]">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/40 text-primary-container flex items-center justify-center shadow-[inset_0_1.5px_1.5px_rgba(255,255,255,0.9),0_4px_12px_rgba(10,46,68,0.1)]">
+<span class="material-symbols-outlined text-headline-sm">wifi</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Utilities &amp; Web</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Broadband, Cloud, Power</span>
+</div>
+</div>
+<span class="flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-sm">check</span> 60%
+          </span>
+</div>
+<div class="flex items-baseline justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Spent</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink">₹1,200</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Allocated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate">₹2,000</span>
+</div>
+</div>
+<!-- Progress Tube -->
+<div class="w-full h-3 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary-fixed w-[60%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_2px_8px_rgba(197,234,224,0.4)]"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+          Healthy (₹800 buffer)
+        </span>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-highest text-deep-ink flex items-center justify-center transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)]">
+<span class="material-symbols-outlined text-body-md">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Card 6: Add New Category (Tactile Glass Lens Interactive Well) -->
+<button class="group relative rounded-lg bg-surface-container/40 hover:bg-surface-container/70 border-2 border-dashed border-outline-variant/60 backdrop-blur-md p-space-lg flex flex-col items-center justify-center gap-space-sm min-h-[220px] transition-all duration-300 hover:scale-[1.01] active:scale-98">
+<div class="w-14 h-14 rounded-full bg-pure-white/80 group-hover:bg-pure-white text-secondary flex items-center justify-center shadow-[inset_0_2px_2px_rgba(255,255,255,1),inset_0_-1px_1.5px_rgba(10,46,68,0.06),0_8px_20px_rgba(10,46,68,0.08)] transition-all">
+<span class="material-symbols-outlined text-headline-md group-hover:scale-110 transition-transform">add</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline-sm text-headline-sm text-deep-ink">Add New Category</span>
+<span class="font-body-sm text-body-sm text-muted-slate">Custom limits, icons &amp; tags</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-pure-white/60 font-label-sm text-label-sm text-secondary shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]">
+        + Allocate from Safe-Spend
+      </span>
+</button>
+</div>
+<!-- Savings Goals Section ('Grow Your Wealth') -->
+<div class="flex flex-col gap-space-lg pt-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Aspirations &amp; Future</span>
+<span class="px-2 py-0.5 rounded-full bg-income-green/10 text-income-green font-label-sm text-label-sm font-semibold">Active Compounding</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-deep-ink tracking-tight">Savings Goals</h2>
+</div>
+<!-- Glossy Turquoise CTA Button -->
+<button class="flex items-center gap-space-xs px-space-xl py-3 rounded-full bg-secondary-fixed hover:bg-secondary-fixed/90 text-on-secondary-fixed font-label-lg text-label-lg shadow-[inset_0_2px_2.5px_0_rgba(255,255,255,1),inset_0_-2px_2px_0_rgba(0,32,27,0.2),0_12px_28px_-6px_rgba(66,101,93,0.3)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-headline-sm">add_circle</span>
+<span>Create New Goal</span>
+</button>
+</div>
+<!-- 4 Rich Motivating Goal Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Goal 1: MacBook Air M3 -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_12px_30px_-6px_rgba(10,46,68,0.08)] group hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="relative w-full h-32 rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek silver Apple MacBook laptop resting on a minimalist frosted acrylic desk, surrounded by natural daylight and gentle turquoise reflections in a high-end studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1BIeuyk3zNOXMJqTV0rryKa3Vy7mYlarMGVM1VorUgIMMyi_Ct2jF1nf5zsLBSXlowPlIF21vFChODSHYycZDyUMZaLsB16z1D5E_gDsLCv2zVv5JrilGlnxh_onr1KvZYO0K5DqUImbs80tuXcDrcHZy6UaV39nl97rOVilLRimFA5qLa0CkYPvcXuG2E_IUI8HnUQKpnkPfAJLjXPgzZH1ifvyUlFyicZKIpkM1"/>
+<span class="absolute top-2 right-2 px-2 py-1 rounded-full bg-primary-container/80 backdrop-blur-md text-pure-white font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">
+              Dec 2024
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink leading-snug">New MacBook Air M3</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Hardware upgrade for work</span>
+</div>
+<!-- Financial Mono Amounts -->
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Accumulated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹42,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Target</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">₹85,000</span>
+</div>
+</div>
+<!-- Glowing Progress bar -->
+<div class="flex flex-col gap-1">
+<div class="w-full h-2.5 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary-fixed w-[49%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_0_10px_rgba(197,234,224,0.6)]"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-muted-slate">
+<span>49% saved</span>
+<span>₹43,000 to go</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center gap-space-xs">
+<button class="w-full py-2 px-space-md rounded-full bg-pure-white/90 hover:bg-pure-white text-deep-ink font-label-md text-label-md flex items-center justify-center gap-1 shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,1),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.05)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-headline-sm text-secondary">add</span>
+<span>+ Add ₹1,000</span>
+</button>
+</div>
+</div>
+<!-- Goal 2: Goa Trip with Friends -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_12px_30px_-6px_rgba(10,46,68,0.08)] group hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="relative w-full h-32 rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tropical sunny coastline with turquoise ocean waves and gentle coconut palm silhouettes in warm afternoon sun, shot on 35mm lens with lush cinematic color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5-db41YEgxQHwb-wcin_lQYYwDjMo4HMdhc3tpg8Jzzb1z_eQ882PZFkQiy1LyeMat9xm-avS8bUNBNqQ0kqJ1-o7mSowxJr_622OLI0w7ss2VwRCmeiW7_uG8Wu5afE71axL3imlP-vIaAX2JJi62BgGfywjmD5syjfhGSJ2d9vqCC5XWH9noRM5H2ZDlJ9Tu612bHxnYmd6NfsY66iTM6hn28u_pKV4i4ZkYls"/>
+<span class="absolute top-2 right-2 px-2.5 py-1 rounded-full bg-income-green/90 backdrop-blur-md text-pure-white font-label-sm text-label-sm font-semibold shadow-[0_2px_8px_rgba(21,132,108,0.3)]">
+              Almost there!
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink leading-snug">Goa Trip with Friends</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Weekend getaway resort &amp; food</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Accumulated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹12,500</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Target</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">₹15,000</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full h-2.5 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-income-green w-[83%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_0_10px_rgba(21,132,108,0.5)]"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-muted-slate">
+<span class="text-income-green font-medium">83% saved</span>
+<span>₹2,500 to go</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center gap-space-xs">
+<button class="w-full py-2 px-space-md rounded-full bg-pure-white/90 hover:bg-pure-white text-deep-ink font-label-md text-label-md flex items-center justify-center gap-1 shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,1),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.05)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-headline-sm text-secondary">add</span>
+<span>+ Add ₹500</span>
+</button>
+</div>
+</div>
+<!-- Goal 3: Emergency Reserve Fund -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_12px_30px_-6px_rgba(10,46,68,0.08)] group hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="relative w-full h-32 rounded-DEFAULT overflow-hidden bg-primary-container p-4 flex flex-col justify-between text-pure-white">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-full bg-pure-white/20 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed text-headline-sm">shield</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-pure-white/10 text-on-primary-container font-label-sm text-label-sm">
+                Jan 2025
+              </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase">Safety Net</span>
+<p class="font-headline-sm text-headline-sm font-semibold">3 Months Living</p>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink leading-snug">Emergency Reserve</span>
+<span class="font-label-sm text-label-sm text-muted-slate">High-yield liquid buffer</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Accumulated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹20,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Target</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">₹30,000</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full h-2.5 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary-fixed w-[66%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_0_10px_rgba(197,234,224,0.6)]"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-muted-slate">
+<span>66% saved</span>
+<span>₹10,000 to go</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center gap-space-xs">
+<button class="w-full py-2 px-space-md rounded-full bg-pure-white/90 hover:bg-pure-white text-deep-ink font-label-md text-label-md flex items-center justify-center gap-1 shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,1),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.05)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-headline-sm text-secondary">add</span>
+<span>+ Add ₹2,000</span>
+</button>
+</div>
+</div>
+<!-- Goal 4: UI/UX Design Certification -->
+<div class="relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg flex flex-col justify-between shadow-[inset_0_2px_2px_0_rgba(255,255,255,0.95),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_12px_30px_-6px_rgba(10,46,68,0.08)] group hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="relative w-full h-32 rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean creative workstation with a stylus tablet displaying vibrant interactive UI wireframes, ambient warm light and crystal acrylic design accessories." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBoM-rb4ycJpenLi6SODyZ8MphuuVrdk9c4x8hi0DsEVa_ceaPkevGEh70L0cb-D7pmVzCVuY16ChbMKuRorCA2VXe31NeqJOM1lB67bBcXxFAcL9zL40QHehF76FCXeByIrb1uwZEAJxfk1LN9KWY2FR7Dah85ksgOpgBD0qg5hfEHSgBaXMkxjxNhIpajzFQ-WbB1qNdN_nHupECgx65FIbCIti6Z7tdjStNrN8k"/>
+<span class="absolute top-2 right-2 px-2 py-1 rounded-full bg-primary-container/80 backdrop-blur-md text-pure-white font-label-sm text-label-sm shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">
+              Nov 2024
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-deep-ink leading-snug">Design Certification</span>
+<span class="font-label-sm text-label-sm text-muted-slate">Advanced Interaction Degree</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Accumulated</span>
+<span class="font-financial-mono-md text-financial-mono-md text-deep-ink font-bold">₹8,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-muted-slate uppercase">Target</span>
+<span class="font-financial-mono-sm text-financial-mono-sm text-muted-slate">₹10,000</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full h-2.5 rounded-full bg-surface-container-high p-0.5 shadow-[inset_0_1px_2px_rgba(10,46,68,0.1)]">
+<div class="h-full rounded-full bg-secondary-fixed w-[80%] shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_0_10px_rgba(197,234,224,0.6)]"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-muted-slate">
+<span class="text-secondary font-medium">80% saved</span>
+<span>₹2,000 to go</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center gap-space-xs">
+<button class="w-full py-2 px-space-md rounded-full bg-pure-white/90 hover:bg-pure-white text-deep-ink font-label-md text-label-md flex items-center justify-center gap-1 shadow-[inset_0_1.5px_2px_0_rgba(255,255,255,1),inset_0_-1.5px_2px_0_rgba(10,46,68,0.06),0_4px_12px_rgba(10,46,68,0.05)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-headline-sm text-secondary">add</span>
+<span>+ Add ₹1,000</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-In Glass Drawer for Editing Monthly Budget -->
+<div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex items-center justify-end p-6" id="budgetDrawer">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-md" id="backdropOverlay"></div>
+<div class="relative w-full max-w-md bg-surface-container-lowest/90 backdrop-blur-3xl rounded-xl p-space-xl shadow-[inset_0_2px_2px_rgba(255,255,255,0.9),inset_0_-2px_2px_rgba(10,46,68,0.1),0_24px_50px_rgba(10,46,68,0.25)] flex flex-col gap-space-lg transform translate-x-8 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Adjust Allocation</span>
+<h3 class="font-headline-md text-headline-md text-deep-ink">Monthly Budget</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-highest text-deep-ink flex items-center justify-center transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)]" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-headline-sm">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-deep-ink">Total Target Cap (₹)</span>
+<div class="flex items-center h-12 rounded-full bg-pure-white px-space-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.08)]">
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate mr-2">₹</span>
+<input class="w-full bg-transparent outline-none font-financial-mono-md text-financial-mono-md text-deep-ink" type="number" value="26000"/>
+</div>
+</label>
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-deep-ink">Safe-Spend Buffer Cushion</span>
+<div class="flex items-center h-12 rounded-full bg-pure-white px-space-md shadow-[inset_0_1.5px_3px_rgba(10,46,68,0.08)]">
+<span class="font-financial-mono-md text-financial-mono-md text-muted-slate mr-2">₹</span>
+<input class="w-full bg-transparent outline-none font-financial-mono-md text-financial-mono-md text-deep-ink" type="number" value="7350"/>
+</div>
+</label>
+<div class="p-space-md rounded-DEFAULT bg-secondary-fixed/20 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-deep-ink">
+            Finora automatically recalibrates category allowances based on your average 90-day velocity.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md">
+<button class="w-full py-3 rounded-full bg-primary-container text-pure-white font-label-lg text-label-lg shadow-[inset_0_2px_2.5px_rgba(255,255,255,0.4),0_10px_24px_rgba(10,46,68,0.3)] active:scale-95 transition-all" id="saveDrawerBtn">
+          Save Reallocations
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for the Edit Monthly Budget Drawer
+  const editBtn = document.getElementById('editBudgetBtn');
+  const drawer = document.getElementById('budgetDrawer');
+  const closeBtn = document.getElementById('closeDrawerBtn');
+  const saveBtn = document.getElementById('saveDrawerBtn');
+  const backdrop = document.getElementById('backdropOverlay');
+
+  function openDrawer() {
+    drawer.classList.remove('pointer-events-none', 'opacity-0');
+    drawer.classList.add('pointer-events-auto', 'opacity-100');
+    drawer.firstElementChild.nextElementSibling.classList.remove('translate-x-8');
+    drawer.firstElementChild.nextElementSibling.classList.add('translate-x-0');
+  }
+
+  function closeDrawer() {
+    drawer.classList.add('pointer-events-none', 'opacity-0');
+    drawer.classList.remove('pointer-events-auto', 'opacity-100');
+    drawer.firstElementChild.nextElementSibling.classList.add('translate-x-8');
+    drawer.firstElementChild.nextElementSibling.classList.remove('translate-x-0');
+  }
+
+  if (editBtn) editBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (saveBtn) saveBtn.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+</script></main></div></body></html>
